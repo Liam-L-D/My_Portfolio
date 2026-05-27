@@ -361,70 +361,142 @@ a {
 /* =========================
    PROCESS
 ========================= */
+
+.process-section {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      rgba(15, 15, 15, 0.82),
+      rgba(15, 15, 15, 0.82)
+    ),
+    url("imgs/Cover/section_background.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .process-step {
   position: relative;
+
   min-height: 250px;
+
   padding: 32px 30px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.055);
-  border-radius: 24px;
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.055);
+
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .process-step:hover {
   transform: translateY(-8px);
-  border-color: rgba(181, 42, 24, 0.22);
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.1);
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border-color: rgba(255, 255, 255, 0.22);
+
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
 }
 
 .process-number {
   position: absolute;
+
   top: 22px;
   right: 24px;
+
   font-size: 0.78rem;
+
   font-weight: 800;
+
   letter-spacing: 0.08em;
-  color: rgba(181, 42, 24, 0.45);
+
+  color: rgba(255, 255, 255, 0.42);
 }
 
 .process-icon {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
   margin-bottom: 26px;
-  border-radius: 50%;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: white;
+
+  font-size: 1.1rem;
 }
 
 .process-title {
   margin: 0 0 14px;
+
   font-size: 1.22rem;
+
   font-weight: 800;
-  color: var(--text-dark);
+
+  color: white;
 }
 
 .process-text {
   margin: 0;
-  color: var(--text-muted);
+
+  color: rgba(255, 255, 255, 0.72);
+
   font-size: 0.98rem;
+
   line-height: 1.75;
 }
 
 .process-connector {
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    rgba(181, 42, 24, 0.18),
-    rgba(181, 42, 24, 0.42)
-  );
   position: relative;
+
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.08)
+    );
 }
 
 .process-connector::after {
   content: "";
+
   position: absolute;
+
   top: 50%;
   right: -1px;
+
   width: 9px;
   height: 9px;
-  border-top: 2px solid rgba(181, 42, 24, 0.5);
-  border-right: 2px solid rgba(181, 42, 24, 0.5);
+
+  border-top: 2px solid rgba(255, 255, 255, 0.55);
+
+  border-right: 2px solid rgba(255, 255, 255, 0.55);
+
   transform: translateY(-50%) rotate(45deg);
 }
 
