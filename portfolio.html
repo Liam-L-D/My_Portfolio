@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfolio | Liam Duan</title>
+  <meta
+    name="description"
+    content="Selected UX/UI, web, branding, information design, and visual communication projects by Liam Duan."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ["Inter", "sans-serif"]
+          },
+          colors: {
+            brand: {
+              red: "#b52a18",
+              dark: "#941c10",
+              soft: "#f6f6f3"
+            }
+          },
+          boxShadow: {
+            card: "0 14px 36px rgba(0,0,0,0.07)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="font-inter text-[#111111] bg-white overflow-x-hidden">
+
+ <!-- ================= HEADER ================= -->
+<header class="fixed top-0 left-0 z-50 w-full border-b border-black/5 bg-white/80 backdrop-blur-xl">
+  <nav class="mx-auto flex min-h-[76px] max-w-[1180px] items-center justify-between px-5 md:px-7">
+
+    <!-- Logo -->
+    <a
+      href="index.html"
+      class="inline-flex items-baseline gap-1 text-[1.35rem] font-extrabold leading-none tracking-[0.08em]"
+    >
+      <span class="text-brand-red">LIAM</span>
+      <span class="text-black">DUAN</span>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button
+      id="menuToggle"
+      class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-black/10 text-black lg:hidden"
+      type="button"
+      aria-controls="mobileMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Desktop Nav -->
+    <div class="hidden items-center gap-2 lg:flex">
+
+      <a class="nav-link" href="index.html">
+        <i class="fa-solid fa-arrow-left mr-2 text-[0.85rem]"></i>Home
+      </a>
+
+      <a
+        class="inline-flex items-center rounded-full bg-brand-red px-5 py-2.5 text-sm font-bold text-white transition hover:bg-brand-dark"
+        href="imgs/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="hidden border-t border-black/5 bg-white/95 px-5 py-4 shadow-lg lg:hidden"
+  >
+    <div class="mx-auto flex max-w-[1180px] flex-col gap-2">
+
+      <a class="mobile-nav-link" href="index.html">
+        <i class="fa-solid fa-arrow-left mr-2 text-[0.85rem]"></i>Home
+      </a>
+
+      <a
+        class="mobile-nav-link text-brand-red font-semibold"
+        href="imgs/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </a>
+
+    </div>
+  </div>
+</header>
+
+  <main class="pt-[76px]">
+
+    <!-- ================= HERO ================= -->
+    <section class="section-soft reveal-group py-16 md:py-20 lg:py-24">
+      <div class="mx-auto max-w-[1140px] px-5 md:px-7">
+        <span class="section-label reveal-up">Portfolio</span>
+        <h1 class="reveal-up mt-4 max-w-4xl text-[2.5rem] font-extrabold leading-[1.05] tracking-[-0.04em] text-black md:text-6xl">
+          Case Studies & Projects
+        </h1>
+        <p class="reveal-up mt-6 max-w-3xl text-base leading-8 text-[#666666] md:text-[1.05rem] md:leading-9">
+          A collection of UX/UI, web, branding, information design, and visual communication projects focused on clarity, structure, responsive experiences, and meaningful design.
+        </p>
+      </div>
+    </section>
+<br>
+    <!-- ================= FILTERS ================= -->
+    <section class="bg-white pb-8">
+      <div class="mx-auto max-w-[1140px] px-5 md:px-7">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="text-sm font-bold uppercase tracking-[0.12em] text-[#666666]">Filter:</span>
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="ux">UX/UI</button>
+          <button class="filter-btn" type="button" data-filter="web">Web</button>
+          <button class="filter-btn" type="button" data-filter="branding">Branding</button>
+          <button class="filter-btn" type="button" data-filter="visual">Visual</button>
+          <button class="filter-btn" type="button" data-filter="information">Information</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT GRID ================= -->
+    <section class="reveal-group bg-white pb-20">
+      <div class="mx-auto max-w-[1140px] px-5 md:px-7">
+        <div id="portfolioGrid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+          <a href="projects/pro-aany.html" class="project-card portfolio-card reveal-card" data-category="ux web branding visual">
+            <img src="imgs/logo_red.png" alt="Asian Arts New York project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">Brand • Web • Event Communication</p>
+              <h3 class="project-title">Asian Arts New York</h3>
+              <p class="project-text">
+                A cultural communication system for branding, website structure, event promotion, and print materials.
+              </p>
+            </div>
+          </a>
+
+          <a href="projects/pro-waada.html" class="project-card portfolio-card reveal-card" data-category="ux web visual">
+            <img src="imgs/WAADA_ModalLogo.png" alt="WAADA project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">Nonprofit • UX Structure • Web</p>
+              <h3 class="project-title">WAADA</h3>
+              <p class="project-text">
+                A nonprofit arts website focused on content organization, event presentation, responsive layout, and maintenance.
+              </p>
+            </div>
+          </a>
+
+          <a href="projects/pro-yuting-learning.html" class="project-card portfolio-card reveal-card" data-category="ux web branding">
+            <img src="imgs/Cover/cover-yuting-learning.webp" alt="Yuting Learning project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">UX/UI • Education • Brand</p>
+              <h3 class="project-title">Yuting Learning</h3>
+              <p class="project-text">
+                An education website concept using UX research, brand foundation, sitemap planning, and responsive interface design.
+              </p>
+            </div>
+          </a>
+
+          <a href="projects/pro-information-design.html" class="project-card portfolio-card reveal-card" data-category="information visual ux">
+            <img src="imgs/Cover/cover_visualization.webp" alt="Information Design project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">Information Design • Visual Storytelling</p>
+              <h3 class="project-title">Information Design</h3>
+              <p class="project-text">
+                A visual storytelling project exploring hierarchy, structure, data, and narrative for clearer understanding.
+              </p>
+            </div>
+          </a>
+
+          <a href="projects/pro-printing-design.html" class="project-card portfolio-card reveal-card" data-category="visual information">
+            <img src="imgs/Cover/cover_printing.webp" alt="Printing design project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">Graphic Design • Print Layout</p>
+              <h3 class="project-title">Printing Design</h3>
+              <p class="project-text">
+                Print-focused design work emphasizing layout clarity, typography, and consistent visual communication.
+              </p>
+            </div>
+          </a>
+
+          <a href="projects/pro-eco-yummy.html" class="project-card portfolio-card reveal-card" data-category="branding visual information">
+            <img src="imgs/EcoYummy/eco-yummy_company.webp" alt="EcoYummy project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">Brand Concept • Packaging</p>
+              <h3 class="project-title">EcoYummy</h3>
+              <p class="project-text">
+                A sustainable product concept combining branding, packaging communication, nutrition information, and market positioning.
+              </p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#111111] py-12 text-white">
+    <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="text-center md:text-left">
+          <p class="mb-2 font-extrabold tracking-[0.08em]">
+            <span class="text-brand-red">LIAM</span> DUAN
+          </p>
+          <p class="mb-1">UX/UI Designer • Front-End Developer • Visual Designer</p>
+          <p>Based in Albany, NY</p>
+        </div>
+
+        <div class="text-center md:text-right">
+          <h6 class="mb-3 text-sm font-bold uppercase tracking-wide">Quick Links</h6>
+          <ul class="space-y-1">
+            <li><a class="footer-link" href="index.html">Home</a></li>
+            <li><a class="footer-link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="footer-link" href="imgs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 flex justify-center gap-5">
+        <a href="https://www.facebook.com/Liam.L.Duan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/liam.lduan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:lduan1996@gmail.com" aria-label="Email" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/liam-duan-248253285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <div class="mt-8 border-t border-white/25 pt-6 text-center text-sm">
+        <p class="mb-2">© <span id="year"></span> <a href="index.html" class="footer-link">Liam Duan</a>. All rights reserved.</p>
+        <p>Designed and developed by Liam Duan</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

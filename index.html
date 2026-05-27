@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Liam Duan | UX/UI Designer, Front-End Developer & Visual Designer</title>
+  <meta
+    name="description"
+    content="Liam Duan is a UX/UI designer, front-end developer, and visual designer focused on responsive web design, information design, visual communication, and user-centered digital experiences."
+  />
+  <meta
+    name="keywords"
+    content="Liam Duan, UX/UI Designer, Front-End Developer, Visual Designer, Graphic Designer, Information Design, Web Design, Portfolio, Case Studies"
+  />
+  <meta name="author" content="Liam Duan" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="icon" href="imgs/favicon.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png" sizes="180x180" />
+  <meta name="theme-color" content="#b52a18" />
+
+  <meta property="og:title" content="Liam Duan | UX/UI Designer, Front-End Developer & Visual Designer" />
+  <meta
+    property="og:description"
+    content="Portfolio of Liam Duan, featuring UX/UI, front-end development, visual communication, information design, and selected case studies."
+  />
+  <meta property="og:image" content="imgs/cover.webp" />
+  <meta property="og:url" content="index.html" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Liam Duan | UX/UI Designer, Front-End Developer & Visual Designer" />
+  <meta
+    name="twitter:description"
+    content="UX/UI, front-end development, visual communication, information design, and selected case studies by Liam Duan."
+  />
+  <meta name="twitter:image" content="imgs/cover.webp" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ["Inter", "sans-serif"]
+          },
+          colors: {
+            brand: {
+              red: "#b52a18",
+              dark: "#941c10",
+              soft: "#f6f6f3"
+            }
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(0,0,0,0.05)",
+            card: "0 14px 36px rgba(0,0,0,0.07)",
+            hover: "0 24px 56px rgba(0,0,0,0.12)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="font-inter text-[#111111] bg-white overflow-x-hidden">
+
+  <!-- ================= HEADER ================= -->
+  <header class="fixed top-0 left-0 z-50 w-full border-b border-black/5 bg-white/80 backdrop-blur-xl">
+    <nav class="mx-auto flex min-h-[76px] max-w-[1180px] items-center justify-between px-5 md:px-7" aria-label="Main navigation">
+      <a href="index.html" class="inline-flex items-baseline gap-1 text-[1.35rem] font-extrabold leading-none tracking-[0.08em]" aria-label="Liam Duan home">
+        <span class="text-brand-red">LIAM</span>
+        <span class="text-black">DUAN</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-black/10 text-black lg:hidden"
+        type="button"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="sr-only">Open menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="hidden items-center gap-1 lg:flex">
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#process">Process</a>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-black/5 bg-white/95 px-5 py-4 shadow-lg lg:hidden">
+      <div class="mx-auto flex max-w-[1180px] flex-col gap-2">
+        <a class="mobile-nav-link" href="#work">Work</a>
+        <a class="mobile-nav-link" href="#about">About</a>
+        <a class="mobile-nav-link" href="#process">Process</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-[76px]">
+
+<!-- ================= HERO ================= -->
+<section id="top" class="reveal-group scroll-mt-24 bg-[linear-gradient(135deg,#f8f5f1_0%,#ffffff_56%,#f3e8e2_100%)] py-10 md:py-14 lg:py-16">
+  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+
+    <div class="grid items-center gap-10 lg:grid-cols-[minmax(300px,430px)_1fr] lg:gap-16">
+
+      <!-- IMAGE -->
+      <div class="reveal-card mx-auto w-full max-w-[520px] lg:mx-0">
+        <div class="rounded-[32px] bg-white/90 p-3 shadow-soft">
+          <img
+            src="imgs/Cover.webp"
+            alt="Portrait of Liam Duan"
+            class="aspect-[4/5] w-full rounded-[24px] object-cover object-center"
+            loading="eager"
+          />
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="reveal-card">
+
+        <span class="section-label reveal-up">
+          Portfolio of Liam Duan
+        </span>
+
+        <h1 class="reveal-up mt-4 text-[2.65rem] font-extrabold leading-[0.98] tracking-[-0.05em] text-black md:text-6xl lg:text-[4.8rem]">
+          Design for
+
+          <span
+            id="rotating-word"
+            class="mt-2 block min-h-[1.15em] text-brand-red transition-all duration-500"
+          >
+            clarity
+          </span>
+        </h1>
+
+        <p class="reveal-up mt-6 max-w-2xl text-[1.02rem] leading-8 text-[#666666] md:text-lg md:leading-9">
+        UX/UI designer and front-end developer with a background in graphic design, branding, and visual communication. Focused on information structure, responsive web design, typography, and creating clear, meaningful digital experiences through thoughtful design systems and user-centered thinking.
+        </p>
+
+        <div class="reveal-up mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <a href="#work" class="btn-brand">
+            View Work
+          </a>
+
+          <a href="portfolio.html" class="btn-outline-brand">
+            Portfolio
+          </a>
+
+          <a
+            href="imgs/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-light-brand"
+          >
+            Resume
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+
+        <div class="reveal-card rounded-[32px] border border-black/5 bg-[#f8f5f1] p-7 shadow-soft md:p-10 lg:p-12">
+          <div class="mx-auto max-w-[820px]">
+            <span class="section-label reveal-up">About Me</span>
+
+            <h2 class="reveal-up mt-3 max-w-[760px] text-3xl font-extrabold leading-tight tracking-[-0.02em] text-black md:text-5xl">
+              Connecting UX, visual design, and front-end structure.
+            </h2>
+
+            <p class="reveal-up mt-6 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+              Originally from Hunan, China, my creative journey began in fine arts during high school before transitioning into graphic design at the undergraduate level and later expanding into information design, UX/UI, and front-end development during the rise of AI-assisted creative technologies. This evolving background has shaped the way I approach design — combining visual communication, structure, usability, and modern digital workflows.
+            </p>
+
+            <p class="reveal-up mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+              I have worked on websites, branding systems, and visual communication projects for cultural organizations, nonprofits, and educational initiatives. My focus is on creating clear, meaningful, and maintainable digital experiences through thoughtful design systems, responsive interfaces, and user-centered thinking.
+            </p>
+
+            <div class="reveal-up mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a href="mailto:lduan1996@gmail.com" class="btn-brand">Contact Me</a>
+              <a href="portfolio.html" class="btn-outline-brand">View Portfolio</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section id="process" class="reveal-group scroll-mt-28 bg-[#f6f6f3] py-16 md:py-20">
+      <div class="mx-auto max-w-[1140px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-14 max-w-[820px] text-center">
+          <span class="section-label">How I Work</span>
+          <h2 class="section-title mt-3">Design Process</h2>
+          <p class="section-intro mx-auto">
+            My process balances research, structure, visual design, and implementation.
+            I focus on making design decisions that are useful, clear, and maintainable.
+          </p>
+        </div>
+
+        <div class="grid items-center gap-5 lg:grid-cols-[1fr_70px_1fr_70px_1fr]">
+          <article class="process-step reveal-card">
+            <span class="process-number">01</span>
+            <span class="process-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <h3 class="process-title">Research & Define</h3>
+            <p class="process-text">
+              Understand the audience, project goal, user needs, content challenges,
+              and constraints before making visual or technical decisions.
+            </p>
+          </article>
+
+          <div class="process-connector hidden lg:block"></div>
+
+          <article class="process-step reveal-card">
+            <span class="process-number">02</span>
+            <span class="process-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+            <h3 class="process-title">Structure & Design</h3>
+            <p class="process-text">
+              Create information hierarchy, wireframes, layouts, and visual systems
+              that support usability, readability, and consistent communication.
+            </p>
+          </article>
+
+          <div class="process-connector hidden lg:block"></div>
+
+          <article class="process-step reveal-card">
+            <span class="process-number">03</span>
+            <span class="process-icon"><i class="fa-solid fa-code"></i></span>
+            <h3 class="process-title">Build & Refine</h3>
+            <p class="process-text">
+              Develop responsive front-end solutions, test layout behavior, refine details,
+              and improve maintainability for future updates.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ================= FEATURED WORK ================= -->
+    <section id="work" class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+      <div class="mx-auto max-w-[1140px] px-5 md:px-7">
+        <div class="reveal-up mb-10">
+          <span class="section-label">Selected Work</span>
+          <h2 class="section-title mt-3">Featured Projects</h2>
+          <p class="section-intro">
+            A focused selection of my strongest projects, highlighting UX thinking,
+            visual communication, responsive web design, and front-end implementation.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <a href="projects/pro-aany.html" class="project-card reveal-card group" aria-label="View Asian Arts New York case study">
+            <img src="imgs/Cover/cover_aany.png" alt="Asian Arts New York project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">Brand • Web • Event Communication</p>
+              <h3 class="project-title">Asian Arts New York</h3>
+              <p class="project-text">
+                A cultural communication system combining brand identity, responsive website design,
+                event promotion, poster design, booklet layout, and maintainable front-end structure.
+              </p>
+            </div>
+          </a>
+
+          <a href="projects/pro-waada.html" class="project-card reveal-card group" aria-label="View WAADA case study">
+            <img src="imgs/Cover/cover_waada.png" alt="WAADA project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">Nonprofit • UX Structure • Web</p>
+              <h3 class="project-title">WAADA</h3>
+              <p class="project-text">
+                A nonprofit arts website focused on content organization, clear navigation,
+                responsive layout, event presentation, and long-term website maintenance.
+              </p>
+            </div>
+          </a>
+
+          <a href="projects/pro-yuting-learning.html" class="project-card reveal-card group" aria-label="View Yuting Learning case study">
+            <img src="imgs/Cover/cover_yuting_learning.png" alt="Yuting Learning project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">UX/UI • Education • Brand</p>
+              <h3 class="project-title">Yuting Learning</h3>
+              <p class="project-text">
+                An education website concept using UX research methods, brand foundation,
+                sitemap planning, content strategy, and responsive interface design.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="reveal-up mt-10 text-center">
+          <a href="portfolio.html" class="btn-outline-brand">Explore Full Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#111111] py-14 text-white">
+    <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+
+      <div class="grid gap-10 md:grid-cols-2 md:items-start">
+
+        <div class="text-center md:text-left">
+          <a
+            href="index.html"
+            class="inline-flex items-baseline gap-1 text-[1.35rem] font-extrabold tracking-[0.08em]"
+          >
+            <span class="text-brand-red">LIAM</span>
+            <span class="text-white">DUAN</span>
+          </a>
+
+          <p class="mt-4 max-w-md text-sm leading-7 text-white/70">
+            UX/UI Designer, Front-End Developer, and Visual Designer focused on
+            creating clear, structured, and meaningful digital experiences.
+          </p>
+
+          <p class="mt-4 text-sm text-white/50">
+            Based in Albany, New York
+          </p>
+        </div>
+
+        <div class="text-center md:text-right">
+          <p class="mb-4 text-sm font-bold uppercase tracking-[0.14em] text-white/40">
+            Navigation
+          </p>
+
+          <ul class="space-y-3">
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="portfolio.html">
+                Portfolio
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="#about">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="#process">
+                Process
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="mailto:lduan1996@gmail.com">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 flex justify-center gap-5">
+        <a
+          href="https://www.facebook.com/Liam.L.Duan"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+          class="social-link"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/liam.lduan/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          class="social-link"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a
+          href="mailto:lduan1996@gmail.com"
+          aria-label="Email"
+          class="social-link"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/liam-duan-248253285/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          class="social-link"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <div class="mt-10 border-t border-white/10 pt-6 text-center text-sm text-white/45">
+        <p>
+          © <span id="year"></span>
+          <a href="index.html" class="footer-link hover:text-white">
+            Liam Duan
+          </a>.
+          All rights reserved.
+        </p>
+
+        <p class="mt-2">
+          Designed & Developed by Liam Duan
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
