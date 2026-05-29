@@ -7,7 +7,7 @@
   <title>Liam Duan | UX/UI Designer, Front-End Developer & Visual Designer</title>
   <meta
     name="description"
-    content="Liam Duan is a UX/UI designer, front-end developer, and visual designer focused on responsive web design, information design, visual communication, and user-centered digital experiences."
+    content="Liam Duan is a UX/UI designer, front-end developer, and visual designer focused on responsive web design, information design, visual communication, branding, and user-centered digital experiences."
   />
   <meta
     name="keywords"
@@ -32,9 +32,9 @@
   <meta property="og:title" content="Liam Duan | UX/UI Designer, Front-End Developer & Visual Designer" />
   <meta
     property="og:description"
-    content="Portfolio of Liam Duan, featuring UX/UI, front-end development, visual communication, information design, and selected case studies."
+    content="Portfolio of Liam Duan, featuring UX/UI, front-end development, branding, visual communication, information design, and selected case studies."
   />
-  <meta property="og:image" content="imgs/cover.webp" />
+  <meta property="og:image" content="imgs/Cover/Portrait.webp" />
   <meta property="og:url" content="index.html" />
   <meta property="og:type" content="website" />
 
@@ -42,9 +42,9 @@
   <meta name="twitter:title" content="Liam Duan | UX/UI Designer, Front-End Developer & Visual Designer" />
   <meta
     name="twitter:description"
-    content="UX/UI, front-end development, visual communication, information design, and selected case studies by Liam Duan."
+    content="UX/UI, front-end development, branding, visual communication, information design, and selected case studies by Liam Duan."
   />
-  <meta name="twitter:image" content="imgs/cover.webp" />
+  <meta name="twitter:image" content="imgs/Cover/Portrait.webp" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -111,226 +111,221 @@
 
     <div id="mobileMenu" class="hidden border-t border-black/5 bg-white/95 px-5 py-4 shadow-lg lg:hidden">
       <div class="mx-auto flex max-w-[1180px] flex-col gap-2">
-        <a class="mobile-nav-link" href="#work">Work</a>
         <a class="mobile-nav-link" href="#about">About</a>
         <a class="mobile-nav-link" href="#process">Process</a>
+        <a class="mobile-nav-link" href="#work">Work</a>
       </div>
     </div>
   </header>
 
   <main class="pt-[76px]">
 
-<!-- ================= HERO ================= -->
-<section
-  id="top"
-  class="relative overflow-hidden reveal-group scroll-mt-24 py-10 md:py-14 lg:py-16"
->
+    <!-- ================= HERO ================= -->
+    <section
+      id="top"
+      class="relative overflow-hidden reveal-group scroll-mt-24 py-10 md:py-14 lg:py-16"
+    >
 
-  <!-- Background Video -->
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="metadata"
-    class="absolute inset-0 h-full w-full object-cover"
-  >
-    <source src="videos/main_hero.mp4" type="video/mp4" />
-  </video>
-
-  <!-- Overlay -->
-  <div
-    class="absolute inset-0 bg-[rgba(255,255,255,0.97)] backdrop-blur-[2px]"
-  ></div>
-
-  <!-- Content -->
-  <div class="relative z-10 mx-auto max-w-[1180px] px-5 md:px-7">
-
-    <div class="grid items-center gap-10 lg:grid-cols-[minmax(300px,430px)_1fr] lg:gap-16">
-
-      <!-- IMAGE -->
-      <div class="reveal-card mx-auto w-full max-w-[520px] lg:mx-0">
-        <div class="rounded-[32px] bg-white/90 p-3 shadow-soft">
-          <img
-            src="imgs/Cover/Portrait.webp"
-            alt="Portrait of Liam Duan"
-            class="aspect-[4/5] w-full rounded-[24px] object-cover object-center"
-            loading="eager"
-          />
-        </div>
-      </div>
-
-      <!-- CONTENT -->
-      <div class="reveal-card">
-
-        <span class="section-label reveal-up">
-          Portfolio of Liam Duan
-        </span>
-
-        <h1
-          class="reveal-up mt-4 text-[2.65rem] font-extrabold leading-[0.98] tracking-[-0.05em] text-black md:text-6xl lg:text-[4.8rem]"
-        >
-          Design for
-
-          <span
-            id="rotating-word"
-            class="mt-2 block min-h-[1.15em] text-brand-red transition-all duration-500"
-          >
-            clarity
-          </span>
-        </h1>
-
-        <p
-          class="reveal-up mt-6 max-w-2xl text-[1.02rem] leading-8 text-[#4f4f4f] md:text-lg md:leading-9"
-        >
-          UX/UI designer and front-end developer with a background in graphic
-          design, branding, and visual communication. Focused on information
-          structure, responsive web design, typography, and creating clear,
-          meaningful digital experiences through thoughtful design systems and
-          user-centered thinking.
-        </p>
-
-        <div
-          class="reveal-up mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
-        >
-          <a href="#work" class="btn-brand">
-            View Work
-          </a>
-
-          <a href="portfolio.html" class="btn-outline-brand">
-            Portfolio
-          </a>
-
-          <a
-            href="imgs/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-light-brand"
-          >
-            Resume
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-   <!-- ================= ABOUT ================= -->
-<section id="about" class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
-  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
-
-    <div class="reveal-card relative overflow-hidden rounded-[32px] border border-black/5 bg-[#f8f5f1] p-7 shadow-soft md:p-10 lg:p-12">
-
-      <!-- VIDEO BACKGROUND -->
+      <!-- Background Video -->
       <video
         autoplay
         muted
         loop
         playsinline
-        class="absolute inset-0 h-full w-full object-cover opacity-[0.12]"
+        preload="metadata"
+        poster="imgs/Cover/Portrait.webp"
+        class="absolute inset-0 hidden h-full w-full object-cover sm:block"
       >
-        <source src="videos/ux_background.mp4" type="video/mp4">
+        <source src="videos/main_hero.mp4" type="video/mp4" />
       </video>
 
-      <!-- OVERLAY -->
-      <div class="absolute inset-0 bg-[#f8f5f1]/55 backdrop-blur-[1px]"></div>
+      <!-- Mobile fallback background -->
+      <div class="absolute inset-0 bg-[linear-gradient(135deg,#f8f5f1_0%,#ffffff_56%,#f3e8e2_100%)] sm:hidden"></div>
 
-      <!-- CONTENT -->
-      <div class="relative z-10 mx-auto max-w-[820px]">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-white/90 backdrop-blur-[1px] sm:bg-white/88"></div>
 
-        <span class="section-label reveal-up">About Me</span>
+      <!-- Content -->
+      <div class="relative z-10 mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="grid items-center gap-10 lg:grid-cols-[minmax(300px,430px)_1fr] lg:gap-16">
 
-        <h2 class="reveal-up mt-3 max-w-[760px] text-3xl font-extrabold leading-tight tracking-[-0.02em] text-black md:text-5xl">
-          Connecting UX, visual design, and front-end structure.
-        </h2>
+          <!-- IMAGE -->
+          <div class="reveal-card order-2 mx-auto w-full max-w-[420px] lg:order-1 lg:mx-0 lg:max-w-[520px]">
+            <div class="rounded-[28px] bg-white/90 p-3 shadow-soft md:rounded-[32px]">
+              <img
+                src="imgs/Cover/Portrait.webp"
+                alt="Portrait of Liam Duan"
+                class="aspect-[4/5] w-full rounded-[22px] object-cover object-center md:rounded-[24px]"
+                loading="eager"
+              />
+            </div>
+          </div>
 
-        <p class="reveal-up mt-6 text-base leading-8 text-[#4b4b4b] md:text-[1.02rem] md:leading-9">
-          Originally from Hunan, China, my creative journey began in fine arts during high school before transitioning into graphic design at the undergraduate level and later expanding into information design, UX/UI, and front-end development during the rise of AI-assisted creative technologies. This evolving background has shaped the way I approach design — combining visual communication, structure, usability, and modern digital workflows.
-        </p>
+          <!-- CONTENT -->
+          <div class="reveal-card order-1 lg:order-2">
+            <span class="section-label reveal-up">
+              Portfolio of Liam Duan
+            </span>
 
-        <p class="reveal-up mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
-          I have worked on websites, branding systems, and visual communication projects for cultural organizations, nonprofits, and educational initiatives. My focus is on creating clear, meaningful, and maintainable digital experiences through thoughtful design systems, responsive interfaces, and user-centered thinking.
-        </p>
+            <h1
+              class="reveal-up mt-4 text-[2.55rem] font-extrabold leading-[0.98] tracking-[-0.05em] text-black sm:text-[3.2rem] md:text-6xl lg:text-[4.8rem]"
+            >
+              Design for
+              <span
+                id="rotating-word"
+                class="mt-2 block min-h-[1.15em] text-brand-red transition-all duration-500"
+              >
+                clarity
+              </span>
+            </h1>
 
-        <div class="reveal-up mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <a href="mailto:lduan1996@gmail.com" class="btn-brand">
-            Contact Me
-          </a>
+            <p
+              class="reveal-up mt-6 max-w-2xl text-base leading-8 text-[#4f4f4f] md:text-lg md:leading-9"
+            >
+              UX/UI designer and front-end developer with a background in graphic
+              design, branding, and visual communication. Focused on information
+              structure, responsive web design, typography, and creating clear,
+              meaningful digital experiences through thoughtful design systems and
+              user-centered thinking.
+            </p>
 
-          <a href="portfolio.html" class="btn-outline-brand">
-            View Portfolio
-          </a>
+            <div
+              class="reveal-up mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+            >
+              <a href="#work" class="btn-brand">
+                View Work
+              </a>
+
+              <a href="portfolio.html" class="btn-outline-brand">
+                Portfolio
+              </a>
+
+              <a
+                href="imgs/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-light-brand"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="reveal-group scroll-mt-28 bg-white py-14 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+
+        <div class="reveal-card relative overflow-hidden rounded-[28px] border border-black/5 bg-[#f8f5f1] p-7 shadow-soft md:rounded-[32px] md:p-10 lg:p-12">
+
+          <!-- VIDEO BACKGROUND -->
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            class="absolute inset-0 hidden h-full w-full object-cover opacity-[0.1] sm:block"
+          >
+            <source src="videos/ux_background.mp4" type="video/mp4" />
+          </video>
+
+          <!-- OVERLAY -->
+          <div class="absolute inset-0 bg-[#f8f5f1]/70 backdrop-blur-[1px]"></div>
+
+          <!-- CONTENT -->
+          <div class="relative z-10 mx-auto max-w-[820px]">
+            <span class="section-label reveal-up">About Me</span>
+
+            <h2 class="reveal-up mt-3 max-w-[760px] text-3xl font-extrabold leading-tight tracking-[-0.02em] text-black md:text-5xl">
+              Connecting UX, visual design, and front-end structure.
+            </h2>
+
+            <p class="reveal-up mt-6 text-base leading-8 text-[#4b4b4b] md:text-[1.02rem] md:leading-9">
+              Originally from Hunan, China, my creative journey began in fine arts during high school before transitioning into graphic design at the undergraduate level and later expanding into information design, UX/UI, and front-end development during the rise of AI-assisted creative technologies. This evolving background has shaped the way I approach design — combining visual communication, structure, usability, and modern digital workflows.
+            </p>
+
+            <p class="reveal-up mt-4 text-base leading-8 text-[#5f5f5f] md:text-[1.02rem] md:leading-9">
+              I have worked on websites, branding systems, and visual communication projects for cultural organizations, nonprofits, and educational initiatives. My focus is on creating clear, meaningful, and maintainable digital experiences through thoughtful design systems, responsive interfaces, and user-centered thinking.
+            </p>
+
+            <div class="reveal-up mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a href="mailto:lduan1996@gmail.com" class="btn-brand">
+                Contact Me
+              </a>
+
+              <a href="portfolio.html" class="btn-outline-brand">
+                View Portfolio
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- ================= PROCESS ================= -->
+    <section id="process" class="process-section reveal-group scroll-mt-28 py-14 md:py-20">
+      <div class="process-bg" aria-hidden="true"></div>
 
-<!-- ================= PROCESS ================= -->
-<section id="process" class="process-section reveal-group scroll-mt-28 py-16 md:py-20">
-  <div class="process-bg" aria-hidden="true"></div>
+      <div class="process-content mx-auto max-w-[1140px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center md:mb-14">
+          <span class="section-label text-white/70">How I Work</span>
 
-  <div class="process-content mx-auto max-w-[1140px] px-5 md:px-7">
-    <div class="reveal-up mx-auto mb-14 max-w-[820px] text-center">
-      <span class="section-label text-white/70">How I Work</span>
+          <h2 class="section-title mt-3 text-white">Design Process</h2>
 
-      <h2 class="section-title mt-3 text-white">Design Process</h2>
+          <p class="section-intro mx-auto text-white/75">
+            My process balances research, structure, visual design, and implementation.
+            I focus on making design decisions that are useful, clear, and maintainable.
+          </p>
+        </div>
 
-      <p class="section-intro mx-auto text-white/75">
-        My process balances research, structure, visual design, and implementation.
-        I focus on making design decisions that are useful, clear, and maintainable.
-      </p>
-    </div>
+        <div class="grid items-stretch gap-5 lg:grid-cols-[1fr_70px_1fr_70px_1fr] lg:items-center">
+          <article class="process-step reveal-card">
+            <span class="process-number">01</span>
+            <span class="process-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
 
-    <div class="grid items-center gap-5 lg:grid-cols-[1fr_70px_1fr_70px_1fr]">
-      <article class="process-step reveal-card">
-        <span class="process-number">01</span>
-        <span class="process-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <h3 class="process-title">Research & Define</h3>
+            <p class="process-text">
+              Understand the audience, project goals, user needs, content challenges,
+              and constraints before making visual or technical decisions.
+            </p>
+          </article>
 
-        <h3 class="process-title">Research & Define</h3>
-        <p class="process-text">
-          Understand the audience, project goals, user needs, content challenges,
-          and constraints before making visual or technical decisions.
-        </p>
-      </article>
+          <div class="process-connector hidden lg:block"></div>
 
-      <div class="process-connector hidden lg:block"></div>
+          <article class="process-step reveal-card">
+            <span class="process-number">02</span>
+            <span class="process-icon"><i class="fa-solid fa-pen-ruler"></i></span>
 
-      <article class="process-step reveal-card">
-        <span class="process-number">02</span>
-        <span class="process-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+            <h3 class="process-title">Structure & Design</h3>
+            <p class="process-text">
+              Create information hierarchy, wireframes, layouts, and visual systems
+              that support usability, readability, and consistent communication.
+            </p>
+          </article>
 
-        <h3 class="process-title">Structure & Design</h3>
-        <p class="process-text">
-          Create information hierarchy, wireframes, layouts, and visual systems
-          that support usability, readability, and consistent communication.
-        </p>
-      </article>
+          <div class="process-connector hidden lg:block"></div>
 
-      <div class="process-connector hidden lg:block"></div>
+          <article class="process-step reveal-card">
+            <span class="process-number">03</span>
+            <span class="process-icon"><i class="fa-solid fa-code"></i></span>
 
-      <article class="process-step reveal-card">
-        <span class="process-number">03</span>
-        <span class="process-icon"><i class="fa-solid fa-code"></i></span>
+            <h3 class="process-title">Build & Refine</h3>
+            <p class="process-text">
+              Develop responsive front-end solutions, test layout behavior, refine details,
+              and improve maintainability for future updates.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <h3 class="process-title">Build & Refine</h3>
-        <p class="process-text">
-          Develop responsive front-end solutions, test layout behavior, refine details,
-          and improve maintainability for future updates.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FEATURED WORK ================= -->
-    <section id="work" class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+    <!-- ================= FEATURED WORK ================= -->
+    <section id="work" class="reveal-group scroll-mt-28 bg-white py-14 md:py-20">
       <div class="mx-auto max-w-[1140px] px-5 md:px-7">
         <div class="reveal-up mb-10">
           <span class="section-label">Selected Work</span>
@@ -388,102 +383,102 @@
   </main>
 
   <!-- ================= FOOTER ================= -->
-<footer class="bg-[#111111] py-14 text-white">
-  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+  <footer class="bg-[#111111] py-14 text-white">
+    <div class="mx-auto max-w-[1180px] px-5 md:px-7">
 
-    <div class="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-start">
+      <div class="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-start">
 
-      <!-- Brand -->
-      <div class="text-center md:text-left">
-        <a
-          href="index.html"
-          class="inline-flex items-baseline gap-1 text-[1.4rem] font-extrabold tracking-[0.08em]"
-        >
-          <span class="text-brand-red">LIAM</span>
-          <span class="text-white">DUAN</span>
+        <!-- Brand -->
+        <div class="text-center md:text-left">
+          <a
+            href="index.html"
+            class="inline-flex items-baseline gap-1 text-[1.4rem] font-extrabold tracking-[0.08em]"
+          >
+            <span class="text-brand-red">LIAM</span>
+            <span class="text-white">DUAN</span>
+          </a>
+
+          <p class="mx-auto mt-4 max-w-[520px] text-sm leading-7 text-white/65 md:mx-0 md:text-base">
+            UX/UI Designer, Front-End Developer, and Visual Designer focused on
+            clear structure, responsive websites, branding, and meaningful digital experiences.
+          </p>
+
+          <p class="mt-3 text-sm text-white/45">
+            Based in Albany, NY
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="text-center md:text-right">
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-white/40">
+            Navigation
+          </p>
+
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="#about">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="#process">
+                Process
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="portfolio.html">
+                Portfolio
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="mailto:lduan1996@gmail.com">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Social Links -->
+      <div class="mt-12 flex justify-center gap-5">
+        <a href="https://www.facebook.com/Liam.L.Duan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+          <i class="fab fa-facebook-f"></i>
         </a>
 
-        <p class="mt-4 max-w-[520px] text-sm leading-7 text-white/65 md:text-base">
-          UX/UI Designer, Front-End Developer, and Visual Designer focused on
-          clear structure, responsive websites, branding, and meaningful digital experiences.
+        <a href="https://www.instagram.com/liam.lduan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="mailto:lduan1996@gmail.com" aria-label="Email" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/liam-duan-248253285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <!-- Bottom -->
+      <div class="mt-10 border-t border-white/10 pt-6 text-center text-sm text-white/45">
+        <p>
+          © <span id="year"></span>
+          <a href="index.html" class="footer-link hover:text-white">
+            Liam Duan
+          </a>.
+          All rights reserved.
         </p>
 
-        <p class="mt-3 text-sm text-white/45">
-          Based in Albany, NY
+        <p class="mt-2">
+          Designed & Developed by Liam Duan
         </p>
       </div>
 
-      <!-- Navigation -->
-      <div class="text-center md:text-right">
-        <p class="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-white/40">
-          Navigation
-        </p>
-
-        <ul class="space-y-3 text-sm">
-          <li>
-            <a class="footer-link transition hover:text-brand-red" href="#about">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a class="footer-link transition hover:text-brand-red" href="#process">
-              Process
-            </a>
-          </li>
-
-          <li>
-            <a class="footer-link transition hover:text-brand-red" href="portfolio.html">
-              Portfolio
-            </a>
-          </li>
-
-          <li>
-            <a class="footer-link transition hover:text-brand-red" href="mailto:lduan1996@gmail.com">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-
     </div>
-
-    <!-- Social Links -->
-    <div class="mt-12 flex justify-center gap-5">
-      <a href="https://www.facebook.com/Liam.L.Duan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-
-      <a href="https://www.instagram.com/liam.lduan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
-        <i class="fab fa-instagram"></i>
-      </a>
-
-      <a href="mailto:lduan1996@gmail.com" aria-label="Email" class="social-link">
-        <i class="fas fa-envelope"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/in/liam-duan-248253285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
-
-    <!-- Bottom -->
-    <div class="mt-10 border-t border-white/10 pt-6 text-center text-sm text-white/45">
-      <p>
-        © <span id="year"></span>
-        <a href="index.html" class="footer-link hover:text-white">
-          Liam Duan
-        </a>.
-        All rights reserved.
-      </p>
-
-      <p class="mt-2">
-        Designed & Developed by Liam Duan
-      </p>
-    </div>
-
-  </div>
-</footer>
+  </footer>
 
   <script src="main.js"></script>
 </body>
