@@ -5,19 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Portfolio | Liam Duan</title>
-  <meta
-    name="description"
-    content="Selected UX/UI, web, branding, information design, and visual communication projects by Liam Duan."
-  />
+  <meta name="description" content="Selected UX/UI, web, branding, and visual communication projects by Liam Duan." />
+  <meta name="keywords" content="Liam Duan, Portfolio, UX/UI Design, Web Design, Branding, Visual Design, Front-End Developer, Graphic Designer" />
+  <meta name="author" content="Liam Duan" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" href="imgs/favicon.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png" sizes="180x180" />
+  <meta name="theme-color" content="#b52a18" />
+
+  <meta property="og:title" content="Portfolio | Liam Duan" />
+  <meta property="og:description" content="Selected UX/UI, web, branding, and visual communication projects by Liam Duan." />
+  <meta property="og:image" content="imgs/cover.webp" />
+  <meta property="og:url" content="portfolio.html" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio | Liam Duan" />
+  <meta name="twitter:description" content="Selected UX/UI, web, branding, and visual communication projects by Liam Duan." />
+  <meta name="twitter:image" content="imgs/cover.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -35,17 +47,16 @@
             }
           },
           boxShadow: {
-            card: "0 14px 36px rgba(0,0,0,0.07)"
+            soft: "0 10px 30px rgba(0,0,0,0.05)",
+            card: "0 14px 36px rgba(0,0,0,0.07)",
+            hover: "0 24px 56px rgba(0,0,0,0.12)"
           }
         }
       }
     };
   </script>
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -147,11 +158,10 @@
     </h1>
 
     <p class="reveal-up mt-6 max-w-3xl text-base leading-8 text-white/75 md:text-[1.05rem] md:leading-9">
-      A collection of UX/UI, web, branding, information design, and visual communication projects focused on clarity, structure, responsive experiences, and meaningful design.
+      A collection of UX/UI, web, branding, and visual communication projects focused on clarity, structure, responsive experiences, and meaningful design.
     </p>
   </div>
 </section>
-
 <br>
     <!-- ================= FILTERS ================= -->
     <section class="bg-white pb-8">
@@ -159,11 +169,10 @@
         <div class="flex flex-wrap items-center gap-3">
           <span class="text-sm font-bold uppercase tracking-[0.12em] text-[#666666]">Filter:</span>
           <button class="filter-btn active" type="button" data-filter="all">All</button>
-          <button class="filter-btn" type="button" data-filter="ux">UX/UI</button>
           <button class="filter-btn" type="button" data-filter="web">Web</button>
+          <button class="filter-btn" type="button" data-filter="ux">UX/UI</button>
           <button class="filter-btn" type="button" data-filter="branding">Branding</button>
-          <button class="filter-btn" type="button" data-filter="visual">Visual</button>
-          <button class="filter-btn" type="button" data-filter="information">Information</button>
+          <button class="filter-btn" type="button" data-filter="visual">Visual Design</button>
         </div>
       </div>
     </section>
@@ -173,68 +182,98 @@
       <div class="mx-auto max-w-[1140px] px-5 md:px-7">
         <div id="portfolioGrid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-          <a href="projects/pro-aany.html" class="project-card portfolio-card reveal-card" data-category="ux web branding visual">
+          <!-- AANY -->
+          <a href="projects/pro-aany.html" class="project-card portfolio-card reveal-card" data-category="web ux branding visual">
             <img src="imgs/Cover/cover_aany.webp" alt="Asian Arts New York project preview" loading="lazy" />
             <div class="p-6">
               <p class="project-tag">Brand • Web • Event Communication</p>
               <h3 class="project-title">Asian Arts New York</h3>
               <p class="project-text">
-                A cultural communication system for branding, website structure, event promotion, and print materials.
+                A cultural communication system integrating branding, website structure, event promotion, and print materials.
               </p>
             </div>
           </a>
 
-          <a href="projects/pro-waada.html" class="project-card portfolio-card reveal-card" data-category="ux web visual">
+          <!-- WAADA -->
+          <a href="projects/pro-waada.html" class="project-card portfolio-card reveal-card" data-category="web ux">
             <img src="imgs/Cover/cover_waada.webp" alt="WAADA project preview" loading="lazy" />
             <div class="p-6">
               <p class="project-tag">Nonprofit • UX Structure • Web</p>
               <h3 class="project-title">WAADA</h3>
               <p class="project-text">
-                A nonprofit arts website focused on content organization, event presentation, responsive layout, and maintenance.
+                A nonprofit arts website focused on content organization, event presentation, responsive layout, and ongoing maintenance.
               </p>
             </div>
           </a>
 
-          <a href="projects/pro-yuting-learning.html" class="project-card portfolio-card reveal-card" data-category="ux web branding">
+          <!-- Yuting Learning -->
+          <a href="projects/pro-yuting-learning.html" class="project-card portfolio-card reveal-card" data-category="web ux branding">
             <img src="imgs/Cover/cover_yuting_learning.webp" alt="Yuting Learning project preview" loading="lazy" />
             <div class="p-6">
-              <p class="project-tag">UX/UI • Education • Brand</p>
+              <p class="project-tag">UX/UI • Education • Branding</p>
               <h3 class="project-title">Yuting Learning</h3>
               <p class="project-text">
-                An education website concept using UX research, brand foundation, sitemap planning, and responsive interface design.
+                An education website concept developed through UX research, information architecture, branding, and responsive interface design.
               </p>
             </div>
           </a>
 
-          <a href="projects/pro-information-design.html" class="project-card portfolio-card reveal-card" data-category="information visual ux">
-            <img src="imgs/Cover/cover_visualization.webp" alt="Information Design project preview" loading="lazy" />
+          <!-- Duan Studio -->
+          <a href="projects/pro-duanstudio.html" class="project-card portfolio-card reveal-card" data-category="web ux branding visual">
+            <img src="imgs/Cover/cover_duanstudio.webp" alt="Duan Studio project preview" loading="lazy" />
             <div class="p-6">
-              <p class="project-tag">Information Design • Visual Storytelling</p>
-              <h3 class="project-title">Information Design</h3>
+              <p class="project-tag">Portfolio • Branding • Web</p>
+              <h3 class="project-title">Duan Studio</h3>
               <p class="project-text">
-                A visual storytelling project exploring hierarchy, structure, data, and narrative for clearer understanding.
+                A personal portfolio and studio website showcasing UX/UI, branding, visual communication, and front-end development.
               </p>
             </div>
           </a>
 
-          <a href="projects/pro-printing-design.html" class="project-card portfolio-card reveal-card" data-category="visual information">
-            <img src="imgs/Cover/cover_printing.webp" alt="Printing design project preview" loading="lazy" />
+          <!-- CCC -->
+          <a href="projects/pro-ccc.html" class="project-card portfolio-card reveal-card" data-category="visual">
+            <img src="imgs/Cover/cover_ccc.webp" alt="Chinese Community Center project preview" loading="lazy" />
             <div class="p-6">
-              <p class="project-tag">Graphic Design • Print Layout</p>
-              <h3 class="project-title">Printing Design</h3>
+              <p class="project-tag">Print Design • Community</p>
+              <h3 class="project-title">Chinese Community Center</h3>
               <p class="project-text">
-                Print-focused design work emphasizing layout clarity, typography, and consistent visual communication.
+                Print and promotional design work supporting community events, cultural celebrations, and organizational communication.
               </p>
             </div>
           </a>
 
-          <a href="projects/pro-eco-yummy.html" class="project-card portfolio-card reveal-card" data-category="branding visual information">
+          <!-- EcoYummy -->
+          <a href="projects/pro-eco-yummy.html" class="project-card portfolio-card reveal-card" data-category="ux branding">
             <img src="imgs/EcoYummy/eco-yummy_company.webp" alt="EcoYummy project preview" loading="lazy" />
             <div class="p-6">
               <p class="project-tag">Brand Concept • Packaging</p>
               <h3 class="project-title">EcoYummy</h3>
               <p class="project-text">
-                A sustainable product concept combining branding, packaging communication, nutrition information, and market positioning.
+                A sustainable product concept combining branding, packaging design, nutrition communication, and market positioning.
+              </p>
+            </div>
+          </a>
+
+          <!-- FunWe -->
+          <a href="projects/pro-funwe.html" class="project-card portfolio-card reveal-card" data-category="ux branding">
+            <img src="imgs/Cover/cover_funwe.webp" alt="FunWe project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">UX/UI • Branding</p>
+              <h3 class="project-title">FunWe</h3>
+              <p class="project-text">
+                A concept project exploring user experience, visual identity, interface design, and brand communication.
+              </p>
+            </div>
+          </a>
+
+          <!-- Chocolate Bar -->
+          <a href="projects/pro-chocolatebar.html" class="project-card portfolio-card reveal-card" data-category="branding">
+            <img src="imgs/Cover/cover_chocolatebar.webp" alt="Chocolate Bar branding project preview" loading="lazy" />
+            <div class="p-6">
+              <p class="project-tag">Brand Identity • Packaging</p>
+              <h3 class="project-title">Chocolate Bar</h3>
+              <p class="project-text">
+                A branding and packaging design project focused on visual identity, product storytelling, and presentation.
               </p>
             </div>
           </a>
@@ -262,8 +301,7 @@
         </a>
 
         <p class="mt-4 max-w-[540px] text-sm leading-7 text-white/65 md:text-base">
-          Selected UX/UI, branding, front-end, and visual communication projects
-          focused on clarity, structure, responsive experiences, and meaningful design.
+          Selected UX/UI, branding, front-end, and visual communication projects focused on clarity, structure, responsive experiences, and meaningful design.
         </p>
 
         <p class="mt-3 text-sm text-white/45">

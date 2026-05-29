@@ -130,13 +130,19 @@ function initProjectModal() {
     if (!imageSrc) return;
 
     modalImage.src = imageSrc;
+
     modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
     document.body.classList.add("overflow-hidden");
   }
 
   function closeModal() {
     modal.classList.add("hidden");
+    modal.classList.remove("flex");
+
     document.body.classList.remove("overflow-hidden");
+
     modalImage.src = "";
   }
 
@@ -146,17 +152,26 @@ function initProjectModal() {
     });
   });
 
-  if (closeButton) closeButton.addEventListener("click", closeModal);
+  if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+  }
 
   modal.addEventListener("click", (e) => {
     if (e.target === modal) closeModal();
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    if (
+      e.key === "Escape" &&
+      !modal.classList.contains("hidden")
+    ) {
       closeModal();
     }
   });
+
+  modalImage.onerror = () => {
+    closeModal();
+  };
 }
 
 // ==============================
