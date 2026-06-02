@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Chocolate Bar – Branding & Packaging Concept | Duan Studio</title>
+  <title>Flavor Journey Packaging Collection | Liam Duan Portfolio</title>
   <meta
     name="description"
-    content="Chocolate Bar branding and packaging concept by Duan Studio, exploring product positioning, visual identity, packaging structure, dieline design, and physical prototype presentation."
+    content="Flavor Journey packaging case study by Liam Duan: a regional chocolate packaging collection exploring city-inspired visual identity, fruit flavor logos, dieline design, and final product mockups."
   />
   <meta
     name="keywords"
-    content="Chocolate bar branding, packaging design, brand identity, product branding, dieline design, Duan Studio, Liam Duan, graphic design"
+    content="Flavor Journey, chocolate packaging, regional packaging design, city-inspired branding, fruit logo design, dieline design, Liam Duan, portfolio, graphic design"
   />
+  <meta name="author" content="Liam Duan" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#b52a18" />
+
+  <meta property="og:title" content="Flavor Journey Packaging Collection | Liam Duan Portfolio" />
+  <meta
+    property="og:description"
+    content="A branding-driven packaging project connecting product positioning, visual identity, dieline structure, and physical prototype presentation."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../imgs/Chocolate_bar/modal_bar1.webp" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Flavor Journey Packaging Collection | Liam Duan Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Product branding, packaging structure, dieline planning, and physical prototype presentation for a chocolate bar concept."
+  />
+  <meta name="twitter:image" content="../imgs/Chocolate_bar/modal_bar1.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,14 +44,33 @@
 
   <link rel="icon" href="../imgs/favicon.png" sizes="32x32" type="image/png" />
   <link rel="apple-touch-icon" href="../imgs/apple-touch-icon.png" sizes="180x180" />
-  <link rel="preload" as="image" href="../imgs/Cover/cover_Bar2.webp" />
+  <link rel="preload" as="image" href="../imgs/Chocolate_bar/modal_bar1.webp" />
 
-  <meta name="theme-color" content="#b52a18" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ["Inter", "sans-serif"]
+          },
+          colors: {
+            brand: {
+              red: "#b52a18",
+              dark: "#941c10",
+              soft: "#f6f6f3"
+            }
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(0,0,0,0.05)",
+            card: "0 14px 36px rgba(0,0,0,0.07)",
+            hover: "0 24px 56px rgba(0,0,0,0.12)"
+          }
+        }
+      }
+    };
+  </script>
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -42,541 +80,669 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 
-<body>
+<body class="font-inter text-[#111111] bg-white overflow-x-hidden">
 
   <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <nav
-      class="navbar navbar-expand-lg navbar-light site-navbar"
-      role="navigation"
-      aria-label="Main navigation"
-    >
-      <div class="container nav-shell">
-        <a
-          class="navbar-brand d-flex align-items-center"
-          href="../index.html"
-          aria-label="Duan Studio home"
-        >
-          <img src="../imgs/nav_logo.png" alt="Duan Studio Logo" class="logo-img" />
-        </a>
+  <header class="fixed top-0 left-0 z-50 w-full border-b border-black/5 bg-white/85 backdrop-blur-xl">
+    <nav class="mx-auto flex min-h-[76px] max-w-[1180px] items-center justify-between px-5 md:px-7" aria-label="Main navigation">
+      <a href="../index.html" class="inline-flex items-baseline gap-1 text-[1.35rem] font-extrabold leading-none tracking-[0.08em]" aria-label="Liam Duan home">
+        <span class="text-brand-red">LIAM</span>
+        <span class="text-black">DUAN</span>
+      </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button
+        id="menuToggle"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-black/10 text-black lg:hidden"
+        type="button"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="sr-only">Open menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#process">Process</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#about">About</a>
-            </li>
-          </ul>
-        </div>
+      <div class="hidden items-center gap-1 lg:flex">
+        <a class="nav-link" href="../portfolio.html">Portfolio</a>
+        <a class="nav-link" href="../imgs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a class="nav-link" href="mailto:lduan1996@gmail.com">Contact</a>
       </div>
     </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-black/5 bg-white/95 px-5 py-4 shadow-lg lg:hidden">
+      <div class="mx-auto flex max-w-[1180px] flex-col gap-2">
+        <a class="mobile-nav-link" href="../portfolio.html">Portfolio</a>
+        <a class="mobile-nav-link" href="../imgs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a class="mobile-nav-link" href="mailto:lduan1996@gmail.com">Contact</a>
+      </div>
+    </div>
   </header>
 
-  <!-- ================= MAIN ================= -->
-  <main class="site-main">
+  <main class="pt-[76px]">
 
     <!-- ================= HERO ================= -->
-    <section class="section-block section-soft reveal-group" id="top">
-      <div class="container section-shell">
-        <div class="section-heading text-center reveal-up">
-          <span class="section-label">Branding + Packaging</span>
-          <h1 class="section-title">Chocolate Bar – Brand Identity & Packaging Concept</h1>
-          <p class="section-intro mx-auto" style="max-width: 780px;">
-            A branding-driven packaging project that explores how a chocolate product can
-            be shaped through visual identity, product tone, packaging structure, dieline
-            design, and physical prototype presentation.
+    <section id="top" class="reveal-group scroll-mt-24 bg-[linear-gradient(135deg,#f8f5f1_0%,#ffffff_55%,#f3e8e2_100%)] py-14 md:py-18 lg:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="mx-auto max-w-[920px] text-center">
+
+          <h1 class="reveal-up mt-4 text-[2.45rem] font-extrabold leading-[1.05] tracking-[-0.05em] text-black md:text-6xl lg:text-[4.2rem]">
+            Flavor Journey
+          </h1>
+
+          <p class="reveal-up mt-4 text-sm font-extrabold uppercase tracking-[0.18em] text-brand-red">
+            Regional Chocolate Packaging Collection
           </p>
+
+          <p class="reveal-up mx-auto mt-6 max-w-3xl text-[1.02rem] leading-8 text-[#666666] md:text-lg md:leading-9">
+            A packaging concept that transforms regional fruit flavors and city identities into a cohesive chocolate collection through branding, logo design, and package development.
+          </p>
+
+          <div class="reveal-up mt-7 flex justify-center">
+            <a href="#overview" class="btn-brand">View Case Study</a>
+          </div>
         </div>
 
-        <div class="reveal-card text-center">
+        <button
+          type="button"
+          class="reveal-card mx-auto mt-12 block max-w-[980px] rounded-[32px] bg-white/85 p-3 text-left shadow-soft transition hover:-translate-y-1 hover:shadow-hover"
+          data-modal-image="../imgs/Chocolate_bar/modal_bar1.webp"
+          aria-label="Open Flavor Journey chocolate packaging hero image"
+        >
           <img
-            src="../imgs/Cover/cover_Bar2.webp"
-            alt="Chocolate bar branding and packaging project cover"
-            class="img-fluid rounded shadow d-block mx-auto"
-            style="width: 100%; max-width: 720px; height: auto;"
+            src="../imgs/Chocolate_bar/modal_bar1.webp"
+            alt="Flavor Journey city-inspired chocolate packaging mockup"
+            class="w-full rounded-[24px] object-cover"
             loading="eager"
           />
-        </div>
+        </button>
       </div>
     </section>
 
-    <!-- ================= OVERVIEW ================= -->
-    <section class="section-block section-white reveal-group">
-      <div class="container section-shell">
-        <div class="row align-items-center g-4 g-lg-5">
-
-          <div class="col-md-6">
-            <div class="reveal-card">
-              <img
-                src="../imgs/Chocolate_bar/Bar1.webp"
-                alt="Chocolate bar branding and packaging overview"
-                class="img-fluid rounded shadow"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="reveal-up">
-              <span class="section-label">Overview</span>
-              <h2 class="section-title">Transforming a simple product into a brand experience</h2>
-
-              <p>
-                This project is more than a packaging exercise. It explores how branding
-                thinking can transform a chocolate bar into a more complete product experience
-                through visual identity, tone, structure, and presentation.
-              </p>
-
-              <p>
-                The design direction focuses on creating a premium and memorable impression,
-                while still considering practical packaging details such as dieline accuracy,
-                folding structure, alignment, and production readiness.
-              </p>
-
-              <p>
-                By combining brand identity and packaging execution, this project presents
-                a complete concept from visual direction to physical prototype.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PROJECT CONTEXT ================= -->
-    <section class="section-block section-soft reveal-group">
-      <div class="container section-shell">
-        <div class="row g-4">
-
-          <div class="col-lg-4">
-            <div class="project-card h-100 reveal-card">
-              <div class="project-card-body">
-                <span class="section-label">Project Type</span>
-                <h2 class="project-card-title">Branding + Packaging</h2>
-                <p class="project-card-text mb-0">
-                  A product branding concept supported by packaging design, visual identity,
-                  dieline planning, and prototype development.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="project-card h-100 reveal-card">
-              <div class="project-card-body">
-                <span class="section-label">Design Focus</span>
-                <h2 class="project-card-title">Product Identity</h2>
-                <p class="project-card-text mb-0">
-                  Focused on brand tone, typography, color, layout, packaging structure,
-                  and how the product appears as a physical object.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="project-card h-100 reveal-card">
-              <div class="project-card-body">
-                <span class="section-label">Tools</span>
-                <h2 class="project-card-title">Software</h2>
-                <p class="project-card-text mb-0">
-                  Adobe Illustrator, Adobe Photoshop, and Procreate.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= BRAND POSITIONING ================= -->
-    <section class="section-block section-white reveal-group">
-      <div class="container section-shell">
-        <div class="row align-items-center g-4 g-lg-5">
-
-          <div class="col-md-6">
-            <div class="reveal-up">
-              <span class="section-label">Brand Positioning</span>
-              <h2 class="section-title">Creating a premium and giftable product impression</h2>
-
-              <p>
-                The brand direction was built around a chocolate product that feels refined,
-                warm, and giftable. Instead of relying only on decoration, the design uses
-                visual hierarchy, color, and layout to create a stronger product personality.
-              </p>
-
-              <p>
-                The intended audience is someone looking for a chocolate product that feels
-                more thoughtful than an everyday snack. This positioning influenced the
-                package composition, front-facing visual impact, and overall presentation.
-              </p>
-
-              <p>
-                The result is a branding direction that connects product appearance with
-                emotion, taste expectation, and shelf presence.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="reveal-card">
-              <img
-                src="../imgs/Chocolate_bar/Bar3.webp"
-                alt="Chocolate bar front packaging design"
-                class="img-fluid rounded shadow"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PROCESS ================= -->
-    <section class="section-block section-soft reveal-group">
-      <div class="container section-shell">
-        <div class="section-heading text-center reveal-up">
-          <span class="section-label">Process</span>
-          <h2 class="section-title">From brand direction to physical prototype</h2>
+    <!-- ================= PROJECT SNAPSHOT ================= -->
+    <section id="overview" class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-10 max-w-[820px] text-center">
+          <span class="section-label">Project Snapshot</span>
+          <h2 class="section-title mt-3">A city-inspired chocolate packaging collection.</h2>
           <p class="section-intro mx-auto">
-            The project was developed through brand positioning, visual design, packaging
-            structure, and hands-on prototype production.
+            Flavor Journey is a branding-driven packaging project that translates four American cities into distinct chocolate flavors while maintaining a unified visual identity.
           </p>
         </div>
 
-        <div class="row g-4 mt-4">
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Role</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Brand & Packaging Designer</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Developed the logo system, packaging structure, color direction, and final mockup presentation.</p>
+          </article>
 
-          <div class="col-md-4">
-            <article class="project-card h-100 reveal-card">
-              <div class="project-card-body">
-                <span class="case-label">01</span>
-                <h3 class="project-card-title mt-2">Brand Direction</h3>
-                <p class="project-card-text mb-0">
-                  Defined the product tone as premium, warm, and giftable, then used that
-                  direction to guide the visual identity and packaging appearance.
-                </p>
-              </div>
-            </article>
-          </div>
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Project Type</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Packaging + Branding</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">A chocolate packaging collection built around four city-flavor identities.</p>
+          </article>
 
-          <div class="col-md-4">
-            <article class="project-card h-100 reveal-card">
-              <div class="project-card-body">
-                <span class="case-label">02</span>
-                <h3 class="project-card-title mt-2">Visual Identity</h3>
-                <p class="project-card-text mb-0">
-                  Developed the typography, color palette, visual hierarchy, and layout
-                  composition to create a recognizable product identity.
-                </p>
-              </div>
-            </article>
-          </div>
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Tools</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Adobe + Procreate</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Used for identity design, dieline layout, illustration, and mockup development.</p>
+          </article>
 
-          <div class="col-md-4">
-            <article class="project-card h-100 reveal-card">
-              <div class="project-card-body">
-                <span class="case-label">03</span>
-                <h3 class="project-card-title mt-2">Packaging Prototype</h3>
-                <p class="project-card-text mb-0">
-                  Built the packaging through dieline planning, folding structure, alignment,
-                  and physical mockup production to test the final presentation.
-                </p>
-              </div>
-            </article>
-          </div>
-
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Focus</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Regional Storytelling</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Four cities are translated into flavor-based package identities.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ================= DESIGN DETAILS ================= -->
-    <section class="section-block section-white reveal-group">
-      <div class="container section-shell">
-        <div class="row g-4">
+   <!-- ================= PROJECT OVERVIEW ================= -->
+<section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+    <div class="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
 
-          <div class="col-lg-8">
-            <div class="project-card h-100 reveal-card">
-              <div class="project-card-body">
-                <span class="section-label">Brand & Packaging Elements</span>
-                <h2 class="project-card-title">What this project includes</h2>
+      <!-- DESIGN BRIEF IMAGE -->
+      <button
+        type="button"
+        class="reveal-card mx-auto w-full max-w-[540px] overflow-hidden rounded-[30px] bg-white p-3 text-left shadow-soft transition hover:-translate-y-1 hover:shadow-hover"
+        data-modal-image="../imgs/Chocolate_bar/design_brief.webp"
+        aria-label="Open Flavor Journey design brief"
+      >
+        <img
+          src="../imgs/Chocolate_bar/design_brief.webp"
+          alt="Flavor Journey design brief board"
+          class="max-h-[720px] w-full rounded-[22px] object-cover object-top"
+          loading="lazy"
+        />
+      </button>
 
-                <ul class="mb-0 ps-3" style="list-style: disc;">
-                  <li class="mb-2">Brand positioning for a premium chocolate product concept</li>
-                  <li class="mb-2">Visual identity direction through typography, color, and layout</li>
-                  <li class="mb-2">Packaging front design with a stronger shelf and gift impression</li>
-                  <li class="mb-2">Custom dieline creation and packaging structure planning</li>
-                  <li class="mb-0">Physical mockup and prototype production for final presentation</li>
-                </ul>
-              </div>
-            </div>
+      <!-- CONTENT -->
+      <div class="reveal-up">
+        <span class="section-label">Project Overview</span>
+
+        <h2 class="section-title mt-3">
+          Turning city identity into a chocolate packaging system.
+        </h2>
+
+        <p class="mt-6 text-base leading-8 text-[#555555] md:text-[1.02rem] md:leading-9">
+          Flavor Journey is a chocolate packaging concept inspired by New York, Chicago, Miami, and Los Angeles. Each city is paired with a regional flavor and translated into its own visual identity.
+        </p>
+
+        <p class="mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+          Beginning with logo development and package structure, the project evolved into a complete packaging system featuring city-inspired graphics, flavor-based branding, and final product mockups.
+        </p>
+
+        <div class="mt-8 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-[22px] border border-black/5 bg-white p-5 shadow-card">
+            <p class="text-xs font-extrabold uppercase tracking-[0.18em] text-brand-red">
+              Scope
+            </p>
+
+            <p class="mt-2 text-sm leading-7 text-[#555555]">
+              Branding, packaging design, logo development, dieline layout,
+              illustration, and product visualization.
+            </p>
           </div>
 
-          <div class="col-lg-4">
-            <div class="project-card h-100 reveal-card">
-              <div class="project-card-body">
-                <span class="section-label">Design Value</span>
-                <h2 class="project-card-title">Brand Experience</h2>
-                <p class="project-card-text mb-0">
-                  The project shows how packaging can become part of a brand experience,
-                  not just a container. The visual system, structure, and physical presentation
-                  work together to communicate product value.
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="rounded-[22px] border border-black/5 bg-white p-5 shadow-card">
+            <p class="text-xs font-extrabold uppercase tracking-[0.18em] text-brand-red">
+              Deliverables
+            </p>
 
+            <p class="mt-2 text-sm leading-7 text-[#555555]">
+              Design brief, package structure, city flavor logo system,
+              final packaging artwork, and chocolate product mockups.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- ================= GALLERY ================= -->
-    <section class="section-block section-soft reveal-group">
-      <div class="container section-shell">
-        <div class="section-heading text-center reveal-up">
-          <span class="section-label">Gallery</span>
-          <h2 class="section-title">Branding & Packaging Highlights</h2>
+    </div>
+  </div>
+</section>
+
+    <!-- ================= DESIGN PROCESS ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center">
+          <span class="section-label">Design Process</span>
+          <h2 class="section-title mt-3">From logo and dieline to regional package identities.</h2>
           <p class="section-intro mx-auto">
-            Selected views showing the chocolate bar packaging concept, including front-facing
-            visual identity and physical product presentation. Click each image to view a larger preview.
+            The project moved from brand identity and package structure to regional research, flavor logo creation, and final packaging presentation.
           </p>
         </div>
 
-        <div class="row portfolio-grid mt-4">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <p class="text-sm font-extrabold text-brand-red">01</p>
+            <h3 class="mt-2 text-lg font-extrabold text-black">Main Logo</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Created the main Flavor Journey logo as the foundation of the brand system.</p>
+          </article>
 
-          <div class="col-md-6">
-            <div class="portfolio-item reveal-card">
-              <button
-                type="button"
-                class="border-0 bg-transparent p-0 w-100 gallery-trigger"
-                data-bs-toggle="modal"
-                data-bs-target="#chocolateModal01"
-                aria-label="Open chocolate bar front packaging enlarged view"
-              >
-                <img
-                  src="../imgs/Chocolate_bar/Bar3.webp"
-                  alt="Chocolate bar packaging front view"
-                  class="img-fluid"
-                  loading="lazy"
-                />
-              </button>
-              <div class="info">
-                <strong>Front Packaging View</strong><br />
-                <span>Visual identity / product face</span>
-              </div>
-            </div>
-          </div>
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <p class="text-sm font-extrabold text-brand-red">02</p>
+            <h3 class="mt-2 text-lg font-extrabold text-black">Dieline</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Defined the wrapper structure, folds, information hierarchy, and brand placement.</p>
+          </article>
 
-          <div class="col-md-6">
-            <div class="portfolio-item reveal-card">
-              <button
-                type="button"
-                class="border-0 bg-transparent p-0 w-100 gallery-trigger"
-                data-bs-toggle="modal"
-                data-bs-target="#chocolateModal02"
-                aria-label="Open chocolate bar perspective packaging enlarged view"
-              >
-                <img
-                  src="../imgs/Chocolate_bar/Bar4.webp"
-                  alt="Chocolate bar packaging perspective view"
-                  class="img-fluid"
-                  loading="lazy"
-                />
-              </button>
-              <div class="info">
-                <strong>Physical Prototype View</strong><br />
-                <span>Packaging structure / presentation</span>
-              </div>
-            </div>
-          </div>
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <p class="text-sm font-extrabold text-brand-red">03</p>
+            <h3 class="mt-2 text-lg font-extrabold text-black">Map Research</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Used city maps as references for shape, identity, and regional storytelling.</p>
+          </article>
 
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <p class="text-sm font-extrabold text-brand-red">04</p>
+            <h3 class="mt-2 text-lg font-extrabold text-black">Fruit Logos</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Created fruit-based logos connected to each city’s flavor direction.</p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <p class="text-sm font-extrabold text-brand-red">05</p>
+            <h3 class="mt-2 text-lg font-extrabold text-black">Mockups</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Applied color, graphics, and package artwork to final product mockups.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ================= OUTCOME ================= -->
-    <section class="section-block section-white reveal-group">
-      <div class="container section-shell">
-        <div class="section-heading text-center reveal-up">
-          <span class="section-label">Outcome</span>
-          <h2 class="section-title">A branding-driven packaging concept</h2>
+  <!-- ================= LOGO + DIELINE ================= -->
+<section class="reveal-group scroll-mt-28 bg-white py-16 md:py-24">
+  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+    <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center">
+      <span class="section-label">Foundation</span>
+
+      <h2 class="section-title mt-3">
+        Brand identity and package structure.
+      </h2>
+
+      <p class="section-intro mx-auto">
+        These early assets established the core identity and structure for the packaging collection.
+      </p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      <!-- MAIN LOGO -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition hover:-translate-y-1 hover:shadow-hover"
+        data-modal-image="../imgs/Chocolate_bar/chocolate-bar_logo.webp"
+        aria-label="Open Flavor Journey main logo"
+      >
+        <div class="h-[320px] w-full overflow-hidden bg-white md:h-[380px]">
+          <img
+            src="../imgs/Chocolate_bar/chocolate-bar_logo.webp"
+            alt="Flavor Journey main logo"
+            class="h-full w-full object-contain p-4 transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="border-t border-black/5 p-6">
+          <p class="text-base font-extrabold text-black">
+            Main Brand Logo
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-[#666666]">
+            The Flavor Journey logo provides the visual starting point for the full packaging system.
+          </p>
+        </div>
+      </button>
+
+      <!-- DIELINE -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition hover:-translate-y-1 hover:shadow-hover"
+        data-modal-image="../imgs/Chocolate_bar/dieline.webp"
+        aria-label="Open chocolate bar dieline"
+      >
+        <div class="h-[320px] w-full overflow-hidden bg-white md:h-[380px]">
+          <img
+            src="../imgs/Chocolate_bar/dieline.webp"
+            alt="Chocolate bar package dieline"
+            class="h-full w-full object-contain p-4 transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="border-t border-black/5 p-6">
+          <p class="text-base font-extrabold text-black">
+            Package Dieline
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-[#666666]">
+            The dieline defines the wrapper structure, including folds, product information, barcode placement, and branding areas.
+          </p>
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!-- ================= REGIONAL RESEARCH ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-24">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-14 max-w-[860px] text-center">
+          <span class="section-label">Regional Research</span>
+          <h2 class="section-title mt-3">Using city maps as visual inspiration.</h2>
           <p class="section-intro mx-auto">
-            The final project presents a chocolate bar as a complete product identity,
-            combining brand tone, visual design, packaging structure, and physical prototype
-            execution. It demonstrates my ability to connect branding strategy with hands-on
-            packaging design and production thinking.
+            City maps provided visual references that helped connect regional identity with flavor-driven packaging design.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <button type="button" class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover" data-modal-image="../imgs/Chocolate_bar/map_nyc.webp" aria-label="Open New York map reference">
+            <img src="../imgs/Chocolate_bar/map_nyc.webp" alt="New York map reference for packaging research" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+            <div class="p-6"><p class="text-base font-extrabold text-black">New York</p><p class="mt-2 text-sm leading-6 text-[#666666]">Map forms and city identity supported the apple-based New York direction.</p></div>
+          </button>
+
+          <button type="button" class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover" data-modal-image="../imgs/Chocolate_bar/map_chicago .webp" aria-label="Open Chicago map reference">
+            <img src="../imgs/Chocolate_bar/map_chicago .webp" alt="Chicago map reference for packaging research" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+            <div class="p-6"><p class="text-base font-extrabold text-black">Chicago</p><p class="mt-2 text-sm leading-6 text-[#666666]">The Chicago map reference helped shape the cherry-inspired identity.</p></div>
+          </button>
+
+          <button type="button" class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover" data-modal-image="../imgs/Chocolate_bar/map_miami.webp" aria-label="Open Miami map reference">
+            <img src="../imgs/Chocolate_bar/map_miami.webp" alt="Miami map reference for packaging research" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+            <div class="p-6"><p class="text-base font-extrabold text-black">Miami</p><p class="mt-2 text-sm leading-6 text-[#666666]">Miami’s tropical character supported the orange flavor and bright color direction.</p></div>
+          </button>
+
+          <button type="button" class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover" data-modal-image="../imgs/Chocolate_bar/map_los_angeles.webp" aria-label="Open Los Angeles map reference">
+            <img src="../imgs/Chocolate_bar/map_los_angeles.webp" alt="Los Angeles map reference for packaging research" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+            <div class="p-6"><p class="text-base font-extrabold text-black">Los Angeles</p><p class="mt-2 text-sm leading-6 text-[#666666]">Los Angeles became the basis for an almond-inspired identity with a softer tone.</p></div>
+          </button>
+        </div>
+      </div>
+    </section>
+<!-- ================= CITY LOGOS ================= -->
+<section class="reveal-group scroll-mt-28 bg-white py-16 md:py-24">
+  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+
+    <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center">
+      <span class="section-label">City Flavor Logos</span>
+
+      <h2 class="section-title mt-3">
+        Fruit-Inspired Identity System
+      </h2>
+
+      <p class="section-intro mx-auto">
+        Each logo combines city identity with a regional flavor, creating a recognizable system across the packaging collection.
+      </p>
+    </div>
+
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
+      <!-- NEW YORK -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[26px] border border-black/5 bg-white text-center shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-hover"
+        data-modal-image="../imgs/Chocolate_bar/modal_logo_new_york.webp"
+        aria-label="Open New York apple flavor logo"
+      >
+        <div class="aspect-square overflow-hidden bg-white p-5">
+          <img
+            src="../imgs/Chocolate_bar/modal_logo_new_york.webp"
+            alt="New York apple flavor logo"
+            class="h-full w-full object-contain transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="border-t border-black/5 p-5">
+          <p class="text-base font-extrabold text-black">
+            New York
+          </p>
+          <p class="mt-1 text-sm font-semibold text-brand-red">
+            Apple Flavor
+          </p>
+        </div>
+      </button>
+
+      <!-- CHICAGO -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[26px] border border-black/5 bg-white text-center shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-hover"
+        data-modal-image="../imgs/Chocolate_bar/modal_logo_chicago.webp"
+        aria-label="Open Chicago cherry flavor logo"
+      >
+        <div class="aspect-square overflow-hidden bg-white p-5">
+          <img
+            src="../imgs/Chocolate_bar/modal_logo_chicago.webp"
+            alt="Chicago cherry flavor logo"
+            class="h-full w-full object-contain transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="border-t border-black/5 p-5">
+          <p class="text-base font-extrabold text-black">
+            Chicago
+          </p>
+          <p class="mt-1 text-sm font-semibold text-brand-red">
+            Cherry Flavor
+          </p>
+        </div>
+      </button>
+
+      <!-- MIAMI -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[26px] border border-black/5 bg-white text-center shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-hover"
+        data-modal-image="../imgs/Chocolate_bar/modallogo_miami.webp"
+        aria-label="Open Miami orange flavor logo"
+      >
+        <div class="aspect-square overflow-hidden bg-white p-5">
+          <img
+            src="../imgs/Chocolate_bar/modallogo_miami.webp"
+            alt="Miami orange flavor logo"
+            class="h-full w-full object-contain transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="border-t border-black/5 p-5">
+          <p class="text-base font-extrabold text-black">
+            Miami
+          </p>
+          <p class="mt-1 text-sm font-semibold text-brand-red">
+            Orange Flavor
+          </p>
+        </div>
+      </button>
+
+      <!-- LOS ANGELES -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[26px] border border-black/5 bg-white text-center shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-hover"
+        data-modal-image="../imgs/Chocolate_bar/modal_logo_los_angeles_.webp"
+        aria-label="Open Los Angeles almond flavor logo"
+      >
+        <div class="aspect-square overflow-hidden bg-white p-5">
+          <img
+            src="../imgs/Chocolate_bar/modal_logo_los_angeles_.webp"
+            alt="Los Angeles almond flavor logo"
+            class="h-full w-full object-contain transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="border-t border-black/5 p-5">
+          <p class="text-base font-extrabold text-black">
+            Los Angeles
+          </p>
+          <p class="mt-1 text-sm font-semibold text-brand-red">
+            Almond Flavor
+          </p>
+        </div>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ================= PACKAGING SYSTEM ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <div class="reveal-up">
+            <span class="section-label">Packaging System</span>
+            <h2 class="section-title mt-3">Applying color, graphics, and information hierarchy.</h2>
+            <p class="mt-6 text-base leading-8 text-[#555555] md:text-[1.02rem] md:leading-9">
+              After the dieline and city logos were established, each package was developed with its own color palette and visual personality while maintaining a consistent overall structure.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            class="reveal-card rounded-[30px] bg-white p-3 text-left shadow-soft transition hover:-translate-y-1 hover:shadow-hover"
+            data-modal-image="../imgs/Chocolate_bar/packaging_design.webp"
+            aria-label="Open packaging design system"
+          >
+            <img
+              src="../imgs/Chocolate_bar/packaging_design.webp"
+              alt="Flavor Journey packaging design system with four dielines"
+              class="w-full rounded-[22px] object-cover"
+              loading="lazy"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL MOCKUPS ================= -->
+    <section class="reveal-group scroll-mt-28 bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-14 max-w-[860px] text-center">
+          <span class="section-label">Final Mockups</span>
+          <h2 class="section-title mt-3">Packaging applied to chocolate products.</h2>
+          <p class="section-intro mx-auto">
+            The final mockups demonstrate how the packaging system translates into a cohesive product collection.
+          </p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3">
+          <button type="button" class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover" data-modal-image="../imgs/Chocolate_bar/modal_bar1.webp" aria-label="Open final mockup one">
+            <img src="../imgs/Chocolate_bar/modal_bar1.webp" alt="Flavor Journey chocolate packaging angled mockup" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+            <div class="p-6"><p class="text-base font-extrabold text-black">Angled Product View</p><p class="mt-2 text-sm leading-6 text-[#666666]">A presentation view showing multiple flavors with chocolate pieces.</p></div>
+          </button>
+
+          <button type="button" class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover" data-modal-image="../imgs/Chocolate_bar/modal_bar2.webp" aria-label="Open final mockup two">
+            <img src="../imgs/Chocolate_bar/modal_bar2.webp" alt="New York and Chicago chocolate packaging mockup" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+            <div class="p-6"><p class="text-base font-extrabold text-black">Warm Flavor Set</p><p class="mt-2 text-sm leading-6 text-[#666666]">New York and Chicago packages showing a warmer visual direction.</p></div>
+          </button>
+
+          <button type="button" class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover" data-modal-image="../imgs/Chocolate_bar/modal_bar3.webp" aria-label="Open final mockup three">
+            <img src="../imgs/Chocolate_bar/modal_bar3.webp" alt="Miami and Los Angeles chocolate packaging mockup" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
+            <div class="p-6"><p class="text-base font-extrabold text-black">Cool Flavor Set</p><p class="mt-2 text-sm leading-6 text-[#666666]">Miami and Los Angeles packages showing a cooler, lighter visual direction.</p></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REFLECTION ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+      <div class="mx-auto max-w-[900px] px-5 md:px-7">
+        <div class="reveal-card rounded-[30px] bg-white p-8 shadow-card md:p-10">
+          <span class="section-label">Reflection</span>
+          <h2 class="mt-3 text-2xl font-extrabold leading-tight text-black md:text-3xl">Designing a system instead of a single package.</h2>
+          <p class="mt-5 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+            This project strengthened my understanding of packaging as a complete design system. By connecting branding, structure, illustration, and regional storytelling, I developed a collection that balances consistency with variation across multiple product identities.
           </p>
         </div>
       </div>
     </section>
 
     <!-- ================= PROJECT NAV ================= -->
-    <section class="section-block section-soft reveal-group">
-      <div class="container section-shell">
-        <div class="text-center reveal-up">
-          <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
-            <a href="pro-eco-yummy.html" class="btn-outline-brand">Previous Project</a>
-            <a href="../portfolio.html" class="btn-brand">Back to Work</a>
-          </div>
+    <section class="bg-white reveal-group py-14">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="pro-eco-yummy.html" class="btn-outline-brand">Previous Project</a>
+          <a href="../portfolio.html" class="btn-brand">Back to Portfolio</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ================= SIMPLE IMAGE MODALS ================= -->
-  <div class="modal fade" id="chocolateModal01" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content bg-transparent border-0">
-        <button
-          type="button"
-          class="btn-close btn-close-white ms-auto mb-2"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-        <img
-          src="../imgs/Chocolate_bar/Bar3.webp"
-          class="img-fluid rounded shadow"
-          alt="Chocolate bar packaging front view enlarged"
-        />
-      </div>
-    </div>
-  </div>
+  <!-- ================= IMAGE MODAL ================= -->
+  <div
+    id="imageModal"
+    class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/85 p-5"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Project image preview"
+  >
+    <button
+      id="modalClose"
+      type="button"
+      class="absolute right-5 top-5 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur transition hover:bg-white/20"
+      aria-label="Close image preview"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </button>
 
-  <div class="modal fade" id="chocolateModal02" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content bg-transparent border-0">
-        <button
-          type="button"
-          class="btn-close btn-close-white ms-auto mb-2"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-        <img
-          src="../imgs/Chocolate_bar/Bar4.webp"
-          class="img-fluid rounded shadow"
-          alt="Chocolate bar packaging perspective view enlarged"
-        />
-      </div>
-    </div>
+    <img
+      id="modalImage"
+      src=""
+      alt="Selected project output enlarged"
+      class="max-h-[82vh] max-w-[86vw] rounded-[18px] object-contain shadow-2xl"
+    />
   </div>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="footer-section text-white pt-5 pb-3 bg-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mb-4 text-md-start text-center">
-          <img
-            src="../imgs/LD_Logo_white.png"
-            alt="Duan Studio Logo"
-            style="height: 50px; width: auto;"
-            class="mb-2"
-          />
-          <p class="mb-1 fw-bold">DUAN STUDIO</p>
-          <p class="mb-1">Based in Albany, NY</p>
+  <footer class="bg-[#111111] py-14 text-white">
+    <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+      <div class="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-start">
+        <div class="text-center md:text-left">
+          <a
+            href="../index.html"
+            class="inline-flex items-baseline gap-1 text-[1.4rem] font-extrabold tracking-[0.08em]"
+            aria-label="Liam Duan home"
+          >
+            <span class="text-brand-red">LIAM</span>
+            <span class="text-white">DUAN</span>
+          </a>
+
+          <p class="mt-4 max-w-[520px] text-sm leading-7 text-white/65 md:text-base">
+            UX/UI Designer, Front-End Developer, and Visual Designer focused on
+            clear structure, responsive websites, branding, and meaningful digital experiences.
+          </p>
+
+          <p class="mt-3 text-sm text-white/45">
+            Based in Albany, NY
+          </p>
         </div>
 
-        <div class="col-md-6 mb-4 text-md-end text-center">
-          <h6 class="text-uppercase fw-bold">Quick Links</h6>
-          <ul class="list-unstyled">
-            <li><a class="text-white text-decoration-none" href="../portfolio.html">Portfolio</a></li>
-            <li><a class="text-white text-decoration-none" href="../index.html#services">Services</a></li>
-            <li><a class="text-white text-decoration-none" href="../index.html#process">Process</a></li>
-            <li><a class="text-white text-decoration-none" href="../index.html#about">About</a></li>
+        <div class="text-center md:text-right">
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-white/40">
+            Explore
+          </p>
+
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="../index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="../portfolio.html">
+                Portfolio
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="footer-link transition hover:text-brand-red"
+                href="../imgs/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="mailto:lduan1996@gmail.com">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 text-center mt-3">
-          <a
-            href="https://www.facebook.com/Liam.L.Duan"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-            class="me-3"
-          >
-            <i class="fab fa-facebook-f fa-lg text-white"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/liam.lduan/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            class="me-3"
-          >
-            <i class="fab fa-instagram fa-lg text-white"></i>
-          </a>
-          <a href="mailto:lduan1996@gmail.com" aria-label="Email" class="me-3">
-            <i class="fas fa-envelope fa-lg text-white"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/liam-duan-248253285/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <i class="fab fa-linkedin-in fa-lg text-white"></i>
-          </a>
-        </div>
+      <div class="mt-12 flex justify-center gap-5">
+        <a href="https://www.facebook.com/Liam.L.Duan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/liam.lduan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="mailto:lduan1996@gmail.com" aria-label="Email" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/liam-duan-248253285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
 
-      <div class="row">
-        <div class="col-12 text-center border-top border-white pt-3 mt-4">
-          <div class="footer-credits">
-            <p class="small mb-2">
-              © <span id="year"></span>
-              <a href="../index.html" class="duan-brand">Duan Studio</a>. All rights reserved.
-            </p>
-            <p class="small mb-0">Designed by Liam Duan</p>
-          </div>
-        </div>
+      <div class="mt-10 border-t border-white/10 pt-6 text-center text-sm text-white/45">
+        <p>
+          © <span id="year"></span>
+          <a href="../index.html" class="footer-link hover:text-white">Liam Duan</a>.
+          All rights reserved.
+        </p>
+
+        <p class="mt-2">
+          Designed & Developed by Liam Duan
+        </p>
       </div>
     </div>
   </footer>
 
-  <!-- ================= SCRIPTS ================= -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    /* Safety cleanup: prevents modal backdrop or locked scrolling from staying after close. */
-    document.querySelectorAll(".modal").forEach(function (modal) {
-      modal.addEventListener("hidden.bs.modal", function () {
-        document.body.classList.remove("modal-open");
-        document.body.style.removeProperty("overflow");
-        document.body.style.removeProperty("padding-right");
-
-        document.querySelectorAll(".modal-backdrop").forEach(function (backdrop) {
-          backdrop.remove();
-        });
-      });
-    });
-  </script>
-
-  <script src="../main.js" defer></script>
+  <script src="../main.js"></script>
 </body>
 </html>
