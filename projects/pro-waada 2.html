@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>WAADA Nonprofit Website UX Case Study | Liam Duan Portfolio</title>
+  <meta
+    name="description"
+    content="WAADA nonprofit website case study by Liam Duan: a responsive UX/UI and front-end project focused on information architecture, visual hierarchy, content organization, accessibility, and long-term website maintenance."
+  />
+  <meta
+    name="keywords"
+    content="WAADA website, nonprofit website design, UX case study, UI design, responsive website, information architecture, front-end development, Liam Duan, portfolio"
+  />
+  <meta name="author" content="Liam Duan" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#b52a18" />
+
+  <meta property="og:title" content="WAADA Nonprofit Website UX Case Study | Liam Duan Portfolio" />
+  <meta
+    property="og:description"
+    content="A nonprofit website UX/UI case study focused on clearer navigation, structured content, responsive design, and maintainable web pages."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../imgs/WAADA/waada-cover.webp" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WAADA Nonprofit Website UX Case Study | Liam Duan Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Responsive nonprofit website redesign, UX structure, information architecture, and front-end development for WAADA."
+  />
+  <meta name="twitter:image" content="../imgs/WAADA/waada-cover.webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="icon" href="../imgs/favicon.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="../imgs/apple-touch-icon.png" sizes="180x180" />
+  <link rel="preload" as="image" href="../imgs/WAADA/waada-cover.webp" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ["Inter", "sans-serif"]
+          },
+          colors: {
+            brand: {
+              red: "#b52a18",
+              dark: "#941c10",
+              soft: "#f6f6f3"
+            }
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(0,0,0,0.05)",
+            card: "0 14px 36px rgba(0,0,0,0.07)",
+            hover: "0 24px 56px rgba(0,0,0,0.12)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="font-inter text-[#111111] bg-white overflow-x-hidden">
+
+  <!-- ================= HEADER ================= -->
+  <header class="fixed top-0 left-0 z-50 w-full border-b border-black/5 bg-white/85 backdrop-blur-xl">
+    <nav class="mx-auto flex min-h-[76px] max-w-[1180px] items-center justify-between px-5 md:px-7" aria-label="Main navigation">
+      <a href="../index.html" class="inline-flex items-baseline gap-1 text-[1.35rem] font-extrabold leading-none tracking-[0.08em]" aria-label="Liam Duan home">
+        <span class="text-brand-red">LIAM</span>
+        <span class="text-black">DUAN</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-black/10 text-black lg:hidden"
+        type="button"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="sr-only">Open menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="hidden items-center gap-1 lg:flex">
+        <a class="nav-link" href="../portfolio.html">Portfolio</a>
+        <a class="nav-link" href="../imgs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a class="nav-link" href="mailto:lduan1996@gmail.com">Contact</a>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-black/5 bg-white/95 px-5 py-4 shadow-lg lg:hidden">
+      <div class="mx-auto flex max-w-[1180px] flex-col gap-2">
+        <a class="mobile-nav-link" href="../portfolio.html">Portfolio</a>
+        <a class="mobile-nav-link" href="../imgs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a class="mobile-nav-link" href="mailto:lduan1996@gmail.com">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-[76px]">
+
+    <!-- ================= HERO ================= -->
+    <section id="top" class="reveal-group scroll-mt-24 bg-[linear-gradient(135deg,#f8f5f1_0%,#ffffff_55%,#f3e8e2_100%)] py-14 md:py-18 lg:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="mx-auto max-w-[900px] text-center">
+          <h1 class="reveal-up mt-4 text-[2.45rem] font-extrabold leading-[1.05] tracking-[-0.05em] text-black md:text-6xl lg:text-[4.2rem]">
+            WAADA Website Redesign
+          </h1>
+
+          <p class="reveal-up mt-4 text-sm font-extrabold uppercase tracking-[0.18em] text-brand-red">
+            Responsive Website System
+          </p>
+
+          <p class="reveal-up mx-auto mt-6 max-w-3xl text-[1.02rem] leading-8 text-[#666666] md:text-lg md:leading-9">
+           A nonprofit website redesign focused on improving content organization, visual hierarchy, responsive design, and long-term website maintainability.
+          </p>
+
+          <div class="reveal-up mt-7 flex justify-center">
+            <a href="#overview" class="btn-brand">View Case Study</a>
+          </div>
+        </div>
+
+        <div class="reveal-card mx-auto mt-12 max-w-[980px] rounded-[32px] bg-white/85 p-3 shadow-soft">
+          <img
+            src="../imgs/WAADA/waada-cover.webp"
+            alt="WAADA nonprofit website redesign preview"
+            class="w-full rounded-[24px] object-cover"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT SNAPSHOT ================= -->
+    <section id="overview" class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-10 max-w-[820px] text-center">
+          <span class="section-label">Project Snapshot</span>
+          <h2 class="section-title mt-3">A clearer digital home for a nonprofit organization.</h2>
+          <p class="section-intro mx-auto">
+            The project connected UX structure, front-end implementation, and maintainable page design into one consistent website system.
+          </p>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Role</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Designer & Developer</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">UX/UI design, information architecture, visual design, front-end development, and ongoing maintenance.</p>
+          </article>
+
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Client</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Washington Art and Design Association (WAADA)</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">A nonprofit organization supporting cultural, artistic, and community-based programs.</p>
+          </article>
+
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Tools</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">HTML, CSS, JS</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Built with responsive front-end code, reusable layouts, and mobile-friendly interaction patterns.</p>
+          </article>
+
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Focus</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">UX Structure</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">Clear navigation, scannable content, mobile-friendly layout, and easier content updates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OVERVIEW ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+          <div class="reveal-card rounded-[30px] bg-white p-3 shadow-soft">
+            <img
+              src="../imgs/WAADA/waada-home.webp"
+              alt="WAADA homepage design screen"
+              class="w-full rounded-[22px] object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="reveal-up">
+            <span class="section-label">Project Overview</span>
+
+            <h2 class="section-title mt-3">
+              Turning nonprofit content into a clearer digital experience.
+            </h2>
+
+            <p class="mt-6 text-base leading-8 text-[#555555] md:text-[1.02rem] md:leading-9">
+              WAADA needed a website that could present its mission, events, gallery materials,
+              team information, donation details, and community programs in a more organized way.
+            </p>
+
+            <p class="mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+              The goal was not only to make the website look better, but also to make it easier
+              for visitors to understand what the organization does and easier for the organization
+              to update content over time.
+            </p>
+
+            <p class="mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+              I approached the project as a UX and information design problem: simplify the
+              structure, create repeatable content sections, and build a responsive website system
+              that can grow with the organization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROBLEM / GOAL ================= -->
+    <section class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-7 shadow-card">
+            <span class="section-label">Problem</span>
+            <h2 class="mt-3 text-2xl font-extrabold leading-tight text-black md:text-3xl">
+              Visitors needed a simpler way to understand the organization.
+            </h2>
+            <p class="mt-5 text-base leading-8 text-[#666666]">
+              Nonprofit websites often contain many types of information: mission statements,
+              programs, event photos, team members, donation information, and announcements.
+              Without a clear structure, visitors may feel overwhelmed or miss important actions.
+            </p>
+            <p class="mt-4 text-base leading-8 text-[#666666]">
+              The main UX challenge was organizing this content so the website felt simple for
+              users while still remaining flexible for future updates.
+            </p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-7 shadow-card">
+            <span class="section-label">Goal</span>
+            <h2 class="mt-3 text-2xl font-extrabold leading-tight text-black md:text-3xl">
+              Build a clear, responsive, and maintainable website system.
+            </h2>
+            <p class="mt-5 text-base leading-8 text-[#666666]">
+              The project goal was to create a website structure that helps users quickly find
+              key information, understand WAADA’s community work, browse visual content, and
+              access donation-related information.
+            </p>
+            <p class="mt-4 text-base leading-8 text-[#666666]">
+              From a design perspective, the website needed consistent navigation, visual rhythm,
+              clear content hierarchy, and reusable layouts for long-term maintenance.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= USER NEEDS ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center">
+          <span class="section-label">User Needs</span>
+          <h2 class="section-title mt-3">Designing for visitors, members, and organizers.</h2>
+          <p class="section-intro mx-auto">
+            Based on the organization’s content needs, I considered three main user groups:
+            first-time visitors, community members, and internal organizers who need to update content.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <p class="text-sm font-extrabold text-brand-red">01</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">First-Time Visitors</h3>
+            <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">Need to quickly understand what WAADA is, what it does, and why the organization matters to the community.</p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <p class="text-sm font-extrabold text-brand-red">02</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Community Members</h3>
+            <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">Need to browse events, galleries, programs, and community activities without getting lost in too much information.</p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <p class="text-sm font-extrabold text-brand-red">03</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Website Maintainers</h3>
+            <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">Need reusable sections and consistent layouts so future updates can be added without redesigning the entire website.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INFORMATION ARCHITECTURE ================= -->
+    <section class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <div class="reveal-up">
+            <span class="section-label">Information Architecture</span>
+            <h2 class="section-title mt-3">Organizing content into a clear website structure.</h2>
+            <p class="mt-6 text-base leading-8 text-[#555555] md:text-[1.02rem] md:leading-9">
+              I organized the website around the main content areas users would expect:
+              Home, About, Gallery, Events, Team, and Donate.
+            </p>
+            <p class="mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+              This structure helps visitors move from general understanding to deeper browsing
+              and finally to action-based content such as donation or contact information.
+            </p>
+            <p class="mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+              The page system also makes the website more scalable because new programs, galleries,
+              or event updates can be added into existing sections.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            class="reveal-card rounded-[30px] bg-[#f8f5f1] p-3 text-left shadow-soft transition hover:-translate-y-1 hover:shadow-hover"
+            data-modal-image="../imgs/WAADA/web_structure.webp"
+            aria-label="Open WAADA website information architecture diagram"
+          >
+            <img
+              src="../imgs/WAADA/web_structure.webp"
+              alt="WAADA website information architecture diagram"
+              class="w-full rounded-[22px] object-cover"
+              loading="lazy"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DESIGN PROCESS ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center">
+          <span class="section-label">Design Process</span>
+          <h2 class="section-title mt-3">From content structure to responsive implementation.</h2>
+          <p class="section-intro mx-auto">
+            The process followed a practical UX workflow: understand the content,
+            organize the structure, design reusable layouts, and refine the website across devices.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <p class="mt-6 text-sm font-extrabold text-brand-red">01</p>
+            <h3 class="mt-2 text-xl font-extrabold text-black">Understand Content</h3>
+            <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">Reviewed the organization’s core content needs, including mission, events, gallery materials, team information, donation content, and community programs.</p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+              <i class="fa-solid fa-sitemap"></i>
+            </span>
+            <p class="mt-6 text-sm font-extrabold text-brand-red">02</p>
+            <h3 class="mt-2 text-xl font-extrabold text-black">Create Structure</h3>
+            <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">Grouped information into clear sections and pages so visitors could scan, understand, and navigate the website more easily.</p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+              <i class="fa-solid fa-code"></i>
+            </span>
+            <p class="mt-6 text-sm font-extrabold text-brand-red">03</p>
+            <h3 class="mt-2 text-xl font-extrabold text-black">Build & Refine</h3>
+            <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">Developed responsive pages with HTML, CSS, JavaScript, then refined spacing, hierarchy, image display, and mobile behavior.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DESIGN DECISIONS ================= -->
+    <section class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center">
+          <span class="section-label">Design Decisions</span>
+          <h2 class="section-title mt-3">Key UX/UI improvements.</h2>
+          <p class="section-intro mx-auto">
+            The visual direction supports clarity, trust, and ease of browsing while keeping
+            the layout practical for a nonprofit organization.
+          </p>
+        </div>
+
+        <div class="grid gap-5">
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <div class="flex gap-5">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+                <i class="fa-solid fa-ranking-star"></i>
+              </span>
+              <div>
+                <h3 class="text-xl font-extrabold text-black">Clear Visual Hierarchy</h3>
+                <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">Used section labels, large headings, short paragraphs, and card-based layouts to help users quickly scan each page.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <div class="flex gap-5">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+                <i class="fa-solid fa-layer-group"></i>
+              </span>
+              <div>
+                <h3 class="text-xl font-extrabold text-black">Reusable Layout System</h3>
+                <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">Created repeatable section patterns for events, gallery content, team details, and donation information so the site remains consistent over time.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <div class="flex gap-5">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </span>
+              <div>
+                <h3 class="text-xl font-extrabold text-black">Responsive Experience</h3>
+                <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">Adjusted spacing, image sizing, navigation behavior, and card layout so the website works across desktop, tablet, and mobile screens.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+ <!-- ================= WEBSITE SHOWCASE ================= -->
+<section class="section-soft reveal-group scroll-mt-28 py-16 md:py-24">
+  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+
+    <div class="reveal-up mx-auto mb-14 max-w-[860px] text-center">
+      <span class="section-label">Website Showcase</span>
+
+      <h2 class="section-title mt-3">
+        Selected pages from the final website.
+      </h2>
+
+      <p class="section-intro mx-auto">
+        A collection of key pages demonstrating the website’s structure,
+        content organization, and responsive user experience across devices.
+      </p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-3">
+
+      <!-- Homepage -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover"
+        data-modal-image="../imgs/WAADA/waada-home.webp"
+        aria-label="Open WAADA homepage screen"
+      >
+        <img
+          src="../imgs/WAADA/waada-home.webp"
+          alt="WAADA homepage layout"
+          class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+
+        <div class="p-6">
+          <p class="text-base font-extrabold text-black">
+            Homepage Structure
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-[#666666]">
+            A clear introduction to the organization’s mission, programs,
+            events, and community impact.
+          </p>
+        </div>
+      </button>
+
+      <!-- Content Organization -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover"
+        data-modal-image="../imgs/WAADA/events-orgnization.webp"
+        aria-label="Open WAADA content organization screen"
+      >
+        <img
+          src="../imgs/WAADA/events-orgnization.webp"
+          alt="WAADA event content organization layout"
+          class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+
+        <div class="p-6">
+          <p class="text-base font-extrabold text-black">
+            Content Organization
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-[#666666]">
+            Structured event and gallery content designed for easier browsing,
+            discovery, and future updates.
+          </p>
+        </div>
+      </button>
+
+      <!-- Mobile Experience -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover"
+        data-modal-image="../imgs/WAADA/mobile-experience.webp"
+        aria-label="Open WAADA mobile layout screen"
+      >
+        <img
+          src="../imgs/WAADA/mobile-experience.webp"
+          alt="WAADA mobile responsive website layout"
+          class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+
+        <div class="p-6">
+          <p class="text-base font-extrabold text-black">
+            Mobile Experience
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-[#666666]">
+            Responsive layouts optimized for smaller screens,
+            touch interactions, and mobile navigation.
+          </p>
+        </div>
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- ================= OUTCOME ================= -->
+    <section class="reveal-group scroll-mt-28 bg-white py-16 md:py-20" aria-labelledby="outcomeTitle">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center">
+          <span class="section-label">Outcome</span>
+          <h2 class="section-title mt-3" id="outcomeTitle">A clearer and easier-to-maintain nonprofit website.</h2>
+          <p class="section-intro mx-auto">
+            The final website gives WAADA a more organized digital platform for presenting
+            its mission, visual content, team information, donation details, and community programs.
+          </p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-3">
+          <div class="reveal-card rounded-2xl bg-[#f8f5f1] p-5 shadow-soft">
+            <p class="text-sm font-extrabold text-brand-red">01</p>
+            <p class="mt-2 text-sm font-semibold text-[#333333]">Clearer navigation</p>
+          </div>
+
+          <div class="reveal-card rounded-2xl bg-[#f8f5f1] p-5 shadow-soft">
+            <p class="text-sm font-extrabold text-brand-red">02</p>
+            <p class="mt-2 text-sm font-semibold text-[#333333]">Better content flow</p>
+          </div>
+
+          <div class="reveal-card rounded-2xl bg-[#f8f5f1] p-5 shadow-soft">
+            <p class="text-sm font-extrabold text-brand-red">03</p>
+            <p class="mt-2 text-sm font-semibold text-[#333333]">Long-term maintenance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT NAV ================= -->
+    <section class="bg-white reveal-group py-14">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="pro-aany.html" class="btn-outline-brand">Previous Project</a>
+          <a href="../portfolio.html" class="btn-brand">Back to Portfolio</a>
+          <a href="pro-information-design.html" class="btn-outline-brand">Next Project</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= IMAGE MODAL ================= -->
+  <div
+    id="imageModal"
+    class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/85 p-5"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Project image preview"
+  >
+    <button
+      id="modalClose"
+      type="button"
+      class="absolute right-5 top-5 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur transition hover:bg-white/20"
+      aria-label="Close image preview"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img
+      id="modalImage"
+      src=""
+      alt="Selected project output enlarged"
+      class="max-h-[82vh] max-w-[86vw] rounded-[18px] object-contain shadow-2xl"
+    />
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#111111] py-14 text-white">
+    <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+      <div class="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-start">
+        <div class="text-center md:text-left">
+          <a
+            href="../index.html"
+            class="inline-flex items-baseline gap-1 text-[1.4rem] font-extrabold tracking-[0.08em]"
+            aria-label="Liam Duan home"
+          >
+            <span class="text-brand-red">LIAM</span>
+            <span class="text-white">DUAN</span>
+          </a>
+
+          <p class="mt-4 max-w-[520px] text-sm leading-7 text-white/65 md:text-base">
+            UX/UI Designer, Front-End Developer, and Visual Designer focused on
+            clear structure, responsive websites, branding, and meaningful digital experiences.
+          </p>
+
+          <p class="mt-3 text-sm text-white/45">
+            Based in Albany, NY
+          </p>
+        </div>
+
+        <div class="text-center md:text-right">
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-white/40">
+            Explore
+          </p>
+
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="../index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="../portfolio.html">
+                Portfolio
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="footer-link transition hover:text-brand-red"
+                href="../imgs/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
+            </li>
+
+            <li>
+              <a class="footer-link transition hover:text-brand-red" href="mailto:lduan1996@gmail.com">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 flex justify-center gap-5">
+        <a href="https://www.facebook.com/Liam.L.Duan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/liam.lduan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="mailto:lduan1996@gmail.com" aria-label="Email" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/liam-duan-248253285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <div class="mt-10 border-t border-white/10 pt-6 text-center text-sm text-white/45">
+        <p>
+          © <span id="year"></span>
+          <a href="../index.html" class="footer-link hover:text-white">Liam Duan</a>.
+          All rights reserved.
+        </p>
+
+        <p class="mt-2">
+          Designed & Developed by Liam Duan
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
