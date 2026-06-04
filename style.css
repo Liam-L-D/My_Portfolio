@@ -65,6 +65,7 @@ a {
 
 button {
   font: inherit;
+  color: inherit;
 }
 
 /* =========================
@@ -797,6 +798,125 @@ header {
   .skill-text {
     font-size: 0.95rem;
   }
+}
+
+
+
+/* =========================
+   CASE STUDY OUTPUT CARDS
+   For project detail pages: horizontal image cards / selected outputs.
+========================= */
+.case-output-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .case-output-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.case-output-card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+  color: inherit;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 28px;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition:
+    transform 0.34s var(--ease-smooth),
+    box-shadow 0.34s var(--ease-smooth),
+    border-color 0.25s ease;
+}
+
+.case-output-card:hover,
+.case-output-card:focus-visible {
+  color: inherit;
+  box-shadow: var(--shadow-hover);
+}
+
+.case-output-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.case-output-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s var(--ease-smooth);
+}
+
+.case-output-content {
+  padding: 1.5rem;
+}
+
+.case-output-title {
+  margin: 0;
+  font-size: clamp(1.15rem, 1.5vw, 1.25rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text-dark);
+}
+
+.case-output-text {
+  margin: 0.75rem 0 0;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .case-output-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .case-output-card:hover .case-output-media img {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .case-output-content {
+    padding: 1.35rem;
+  }
+
+  .case-output-media {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+/* =========================
+   IMAGE / CARD STABILITY FIX
+   Prevents card media from leaving visual gaps in case-study layouts.
+========================= */
+.reveal-card > img,
+.reveal-card picture > img {
+  width: 100%;
+}
+
+button.reveal-card {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Tailwind arbitrary aspect utilities work best when the image itself fills its wrapper. */
+.reveal-card .aspect-\[16\/10\] img,
+.reveal-card .aspect-\[16\/9\] img,
+.reveal-card .aspect-\[4\/3\] img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* =========================
