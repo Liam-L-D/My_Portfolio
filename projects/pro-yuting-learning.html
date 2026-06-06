@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Yuting Learning Brand & Website Case Study | Liam Duan Portfolio</title>
+  <meta
+    name="description"
+    content="Yuting Learning case study by Liam Duan: a teacher brand and responsive website project focused on multilingual learner support, brand identity, front-end development, SEO, performance, and accessibility."
+  />
+  <meta
+    name="keywords"
+    content="Yuting Learning, education website, teacher brand, multilingual learners, bilingual website, branding design, SEO, responsive web design, front-end development, Liam Duan portfolio"
+  />
+  <meta name="author" content="Liam Duan" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#b52a18" />
+
+  <meta property="og:title" content="Yuting Learning Brand & Website Case Study | Liam Duan Portfolio" />
+  <meta
+    property="og:description"
+    content="A teacher brand and responsive website system designed for multilingual learner support, family communication, and search visibility."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../imgs/Yuting_Learning/yuting_ui.webp" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yuting Learning Brand & Website Case Study | Liam Duan Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Brand identity, responsive website development, SEO implementation, and performance optimization for Yuting Learning."
+  />
+  <meta name="twitter:image" content="../imgs/Yuting_Learning/yuting_ui.webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="icon" href="../imgs/favicon.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="../imgs/apple-touch-icon.png" sizes="180x180" />
+  <link rel="preload" as="image" href="../imgs/Yuting_Learning/yuting_ui.webp" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ["Inter", "sans-serif"]
+          },
+          colors: {
+            brand: {
+              red: "#b52a18",
+              dark: "#941c10",
+              soft: "#f6f6f3"
+            }
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(0,0,0,0.05)",
+            card: "0 14px 36px rgba(0,0,0,0.07)",
+            hover: "0 24px 56px rgba(0,0,0,0.12)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="font-inter text-[#111111] bg-white overflow-x-hidden">
+
+  <!-- ================= HEADER ================= -->
+  <header class="fixed top-0 left-0 z-50 w-full border-b border-black/5 bg-white/85 backdrop-blur-xl">
+    <nav class="mx-auto flex min-h-[76px] max-w-[1180px] items-center justify-between px-5 md:px-7" aria-label="Main navigation">
+      <a href="../index.html" class="inline-flex items-baseline gap-1 text-[1.35rem] font-extrabold leading-none tracking-[0.08em]" aria-label="Liam Duan home">
+        <span class="text-brand-red">LIAM</span>
+        <span class="text-black">DUAN</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-black/10 text-black lg:hidden"
+        type="button"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="sr-only">Open menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="hidden items-center gap-1 lg:flex">
+        <a class="nav-link" href="../portfolio.html">Portfolio</a>
+        <a class="nav-link" href="../imgs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a class="nav-link" href="mailto:lduan1996@gmail.com">Contact</a>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-black/5 bg-white/95 px-5 py-4 shadow-lg lg:hidden">
+      <div class="mx-auto flex max-w-[1180px] flex-col gap-2">
+        <a class="mobile-nav-link" href="../portfolio.html">Portfolio</a>
+        <a class="mobile-nav-link" href="../imgs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a class="mobile-nav-link" href="mailto:lduan1996@gmail.com">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-[76px]">
+
+    <!-- ================= HERO ================= -->
+    <section id="top" class="reveal-group scroll-mt-24 bg-[linear-gradient(135deg,#f8f5f1_0%,#ffffff_55%,#f3e8e2_100%)] py-14 md:py-18 lg:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="mx-auto max-w-[920px] text-center">
+          <h1 class="reveal-up mt-4 text-[2.45rem] font-extrabold leading-[1.05] tracking-[-0.05em] text-black md:text-6xl lg:text-[4.2rem]">
+            Yuting Learning Brand & Website
+          </h1>
+
+          <p class="reveal-up mt-4 text-sm font-extrabold uppercase tracking-[0.18em] text-brand-red">
+            Brand Identity · Responsive Website · SEO
+          </p>
+
+          <p class="reveal-up mx-auto mt-6 max-w-3xl text-[1.02rem] leading-8 text-[#666666] md:text-lg md:leading-9">
+            A complete education brand and website system designed to support multilingual learners,
+            communicate teaching expertise, and improve search visibility through responsive development and SEO.
+          </p>
+
+          <div class="reveal-up mt-7 flex justify-center">
+            <a href="#overview" class="btn-brand">View Case Study</a>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="reveal-card mx-auto mt-12 block max-w-[980px] rounded-[32px] bg-white/85 p-3 text-left shadow-soft transition hover:-translate-y-1 hover:shadow-hover"
+          data-modal-image="../imgs/Yuting_Learning/yuting_ui.webp"
+          aria-label="Open Yuting Learning responsive website mockup"
+        >
+          <img
+            src="../imgs/Yuting_Learning/yuting_ui.webp"
+            alt="Yuting Learning responsive website mockup"
+            class="w-full rounded-[24px] object-cover"
+            loading="eager"
+          />
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT SNAPSHOT ================= -->
+    <section id="overview" class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-10 max-w-[820px] text-center">
+          <span class="section-label">Project Snapshot</span>
+          <h2 class="section-title mt-3">A teacher brand built from visual identity to live website.</h2>
+          <p class="section-intro mx-auto">
+            The project connects branding, content organization, front-end development,
+            bilingual communication, SEO, and performance optimization into one portfolio case study.
+          </p>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Role</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Designer & Developer</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">
+              Brand identity, UI layout, responsive front-end development, SEO setup, and deployment.
+            </p>
+          </article>
+
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Client</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Yuting Learning</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">
+              An education brand focused on ELD instruction, multilingual learner support, and family communication.
+            </p>
+          </article>
+
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Tools</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">HTML, CSS, JS</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">
+              Built with semantic HTML, custom CSS, JavaScript interactions, responsive layouts, and Netlify deployment.
+            </p>
+          </article>
+
+          <article class="reveal-card rounded-[26px] border border-black/5 bg-[#f8f5f1] p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-red">Focus</p>
+            <h3 class="mt-3 text-xl font-extrabold text-black">Brand + SEO</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">
+              Created a trustworthy brand presence and optimized the site for performance, accessibility, and visibility.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHALLENGE / GOAL ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-7 shadow-card">
+            <span class="section-label">Challenge</span>
+            <h2 class="mt-3 text-2xl font-extrabold leading-tight text-black md:text-3xl">
+              Make a teacher-led education brand clear, warm, and credible.
+            </h2>
+            <p class="mt-5 text-base leading-8 text-[#666666]">
+              Yuting Learning needed to communicate with students, parents, and families at the same time. The site had to explain the teacher’s background, service focus, and learning philosophy without feeling crowded.
+            </p>
+            <p class="mt-4 text-base leading-8 text-[#666666]">
+              The challenge was to balance a personal teaching voice with a professional visual system and a simple, scannable website structure.
+            </p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-7 shadow-card">
+            <span class="section-label">Goal</span>
+            <h2 class="mt-3 text-2xl font-extrabold leading-tight text-black md:text-3xl">
+              Create one connected system from identity to live website.
+            </h2>
+            <p class="mt-5 text-base leading-8 text-[#666666]">
+              The goal was to design and develop a responsive website that introduces Yuting Learning, explains the teaching approach, presents services clearly, and supports English and Chinese audiences.
+            </p>
+            <p class="mt-4 text-base leading-8 text-[#666666]">
+              The final site needed semantic HTML, responsive layouts, optimized images, metadata, Open Graph tags, sitemap, robots file, and clean deployment on Netlify.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BRAND IDENTITY ================= -->
+<section class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+    <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center">
+      <span class="section-label">Brand Identity</span>
+      <h2 class="section-title mt-3">A visual system based on trust, growth, and communication.</h2>
+      <p class="section-intro mx-auto">
+        The identity system includes logo development, color palette, typography,
+        and basic usage guidelines for consistent digital and print communication.
+      </p>
+    </div>
+
+    <div class="grid items-start gap-8 lg:grid-cols-[0.68fr_1.32fr] lg:gap-10">
+
+      <button
+        type="button"
+        class="reveal-card overflow-hidden rounded-[30px] border border-black/5 bg-white p-4 shadow-card transition hover:-translate-y-1 hover:shadow-hover"
+        data-modal-image="../imgs/Yuting_Learning/yuting_design_brief.webp"
+        aria-label="Open Yuting Learning brand design brief"
+      >
+        <img
+          src="../imgs/Yuting_Learning/yuting_design_brief.webp"
+          alt="Yuting Learning brand design brief"
+          class="w-full rounded-[22px] object-cover"
+          loading="lazy"
+        />
+      </button>
+
+      <div class="grid gap-5 sm:grid-cols-2">
+
+        <article class="reveal-card rounded-[26px] border border-black/5 bg-white p-6 shadow-card">
+          <p class="text-sm font-extrabold text-brand-red">01</p>
+          <h3 class="mt-3 text-xl font-extrabold text-black">Logo Development</h3>
+          <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">
+            The mark was refined from initial sketches into a simple, flowing symbol
+            that suggests growth, learning, and movement.
+          </p>
+        </article>
+
+        <article class="reveal-card rounded-[26px] border border-black/5 bg-white p-6 shadow-card">
+          <p class="text-sm font-extrabold text-brand-red">02</p>
+          <h3 class="mt-3 text-xl font-extrabold text-black">Color System</h3>
+          <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">
+            The original brand palette uses navy, purple, green, teal, and cream to express
+            trust, creativity, growth, communication, and warmth.
+          </p>
+        </article>
+
+        <article class="reveal-card rounded-[26px] border border-black/5 bg-white p-6 shadow-card">
+          <p class="text-sm font-extrabold text-brand-red">03</p>
+          <h3 class="mt-3 text-xl font-extrabold text-black">Typography</h3>
+          <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">
+            Helvetica was selected for clarity, simplicity, and readability across website,
+            educational materials, and brand communication.
+          </p>
+        </article>
+
+        <article class="reveal-card rounded-[26px] border border-black/5 bg-white p-6 shadow-card">
+          <p class="text-sm font-extrabold text-brand-red">04</p>
+          <h3 class="mt-3 text-xl font-extrabold text-black">Brand Guidelines</h3>
+          <p class="mt-3 text-[0.98rem] leading-8 text-[#666666]">
+            Clear space, minimum size, and color usage were organized to keep the identity
+            consistent across future applications.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ================= WEBSITE STRUCTURE ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up mx-auto mb-12 max-w-[820px] text-center">
+          <span class="section-label">Website Structure</span>
+          <h2 class="section-title mt-3">Organizing the site around learner and family needs.</h2>
+          <p class="section-intro mx-auto">
+            The site structure helps visitors understand the teacher’s background,
+            teaching philosophy, service areas, and contact options without unnecessary complexity.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-4">
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+              <i class="fa-solid fa-house"></i>
+            </span>
+            <h3 class="mt-5 text-xl font-extrabold text-black">Home</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">
+              Introduces the brand message, teaching focus, and main call-to-action.
+            </p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+              <i class="fa-solid fa-user-graduate"></i>
+            </span>
+            <h3 class="mt-5 text-xl font-extrabold text-black">About</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">
+              Presents teaching background, credentials, and professional experience.
+            </p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+              <i class="fa-solid fa-seedling"></i>
+            </span>
+            <h3 class="mt-5 text-xl font-extrabold text-black">Approach</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">
+              Explains the teaching philosophy, language growth, and student-centered support.
+            </p>
+          </article>
+
+          <article class="reveal-card rounded-[28px] border border-black/5 bg-white p-6 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f8f5f1] text-brand-red">
+              <i class="fa-solid fa-comments"></i>
+            </span>
+            <h3 class="mt-5 text-xl font-extrabold text-black">Services</h3>
+            <p class="mt-3 text-sm leading-7 text-[#666666]">
+              Organizes ESOL, PreK–12, TEFL, and family communication support.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DEVELOPMENT & SEO ================= -->
+    <section class="section-soft reveal-group scroll-mt-28 py-16 md:py-20">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <div class="reveal-up">
+            <span class="section-label">Development & SEO</span>
+            <h2 class="section-title mt-3">Designed, developed, and optimized for search visibility.</h2>
+            <p class="mt-6 text-base leading-8 text-[#555555] md:text-[1.02rem] md:leading-9">
+              The website was built with HTML5, CSS3, and JavaScript, using responsive layouts
+              and semantic structure to support usability, accessibility, and search performance.
+            </p>
+            <p class="mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+              SEO implementation included meta titles and descriptions, keywords, Open Graph tags,
+              Twitter card metadata, sitemap.xml, robots.txt, and mobile optimization.
+            </p>
+            <p class="mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+              The site was deployed on Netlify with a focus on fast loading, stable layout,
+              and consistent behavior across devices.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            class="reveal-card rounded-[30px] bg-white p-3 text-left shadow-soft transition hover:-translate-y-1 hover:shadow-hover"
+            data-modal-image="../imgs/Yuting_Learning/yuting_web_Brief.webp"
+            aria-label="Open Yuting Learning development and SEO brief"
+          >
+            <img
+              src="../imgs/Yuting_Learning/yuting_web_Brief.webp"
+              alt="Yuting Learning development and SEO brief"
+              class="w-full rounded-[22px] object-cover"
+              loading="lazy"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+
+<!-- ================= LIGHTHOUSE AUDIT ================= -->
+<section class="reveal-group scroll-mt-28 bg-white py-16 md:py-20">
+  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+
+    <div class="reveal-up mx-auto mb-12 max-w-[840px] text-center">
+      <span class="section-label">Lighthouse Audit</span>
+
+      <h2 class="section-title mt-3">
+        Performance, accessibility, and SEO validation.
+      </h2>
+
+      <p class="section-intro mx-auto">
+        The final website was evaluated using Google Lighthouse to measure
+        performance, accessibility, best practices, and SEO quality across
+        desktop devices.
+      </p>
+    </div>
+
+    <div class="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+
+      <!-- LIGHTHOUSE IMAGE -->
+      <button
+        type="button"
+        class="reveal-card rounded-[30px] bg-white p-3 text-left shadow-soft transition hover:-translate-y-1 hover:shadow-hover"
+        data-modal-image="../imgs/Yuting_Learning/seo_score.webp"
+        aria-label="Open Yuting Learning Lighthouse score"
+      >
+        <img
+          src="../imgs/Yuting_Learning/seo_score.webp"
+          alt="Yuting Learning Lighthouse audit report"
+          class="w-full rounded-[22px] object-cover"
+          loading="lazy"
+        />
+      </button>
+
+      <!-- CONTENT -->
+      <div class="reveal-up">
+
+        <span class="section-label">Technical Outcome</span>
+
+        <h3 class="section-title mt-3">
+          Strong desktop audit results.
+        </h3>
+
+        <p class="mt-6 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+          The website combines responsive front-end development, semantic HTML,
+          optimized assets, and structured metadata to create a fast and
+          accessible experience across devices.
+        </p>
+
+        <p class="mt-4 text-base leading-8 text-[#666666] md:text-[1.02rem] md:leading-9">
+          Technical implementation included responsive layouts, image
+          optimization, accessibility considerations, SEO metadata, Open Graph
+          integration, sitemap generation, and deployment through Netlify.
+        </p>
+
+        <!-- LIGHTHOUSE SCORES -->
+        <div class="mt-10 grid grid-cols-4 gap-4">
+
+          <div class="flex justify-center">
+            <div class="flex h-[72px] w-[72px] items-center justify-center rounded-full border-[3px] border-[#0CCE6B] md:h-20 md:w-20">
+              <span class="text-3xl font-extrabold text-[#0CCE6B]">99</span>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="flex h-[72px] w-[72px] items-center justify-center rounded-full border-[3px] border-[#0CCE6B] md:h-20 md:w-20">
+              <span class="text-3xl font-extrabold text-[#0CCE6B]">94</span>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="flex h-[72px] w-[72px] items-center justify-center rounded-full border-[3px] border-[#0CCE6B] md:h-20 md:w-20">
+              <span class="text-3xl font-extrabold text-[#0CCE6B]">100</span>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="flex h-[72px] w-[72px] items-center justify-center rounded-full border-[3px] border-[#0CCE6B] md:h-20 md:w-20">
+              <span class="text-3xl font-extrabold text-[#0CCE6B]">100</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   <!-- ================= SELECTED OUTPUTS ================= -->
+<section class="section-soft reveal-group scroll-mt-28 py-16 md:py-24">
+  <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+
+    <div class="reveal-up mx-auto mb-14 max-w-[860px] text-center">
+      <span class="section-label">Selected Outputs</span>
+
+      <h2 class="section-title mt-3">
+        Key deliverables from the final brand system.
+      </h2>
+
+      <p class="section-intro mx-auto">
+        A selection of visual and digital outputs demonstrating the identity system,
+        brand documentation, and search visibility of the final website.
+      </p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-3">
+
+      <!-- LOGO PRESENTATION -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover"
+        data-modal-image="../imgs/Yuting_Learning/logos_presentation.webp"
+        aria-label="Open Yuting Learning logo presentation"
+      >
+        <div class="aspect-[4/5] overflow-hidden bg-[#f8f5f1]">
+          <img
+            src="../imgs/Yuting_Learning/logos_presentation.webp"
+            alt="Yuting Learning logo presentation"
+            class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="p-6">
+          <p class="text-base font-extrabold text-black">
+            Logo Presentation
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-[#666666]">
+            Primary logo, lockups, and visual variations demonstrating flexibility across applications.
+          </p>
+        </div>
+      </button>
+
+      <!-- BRAND BRIEF -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover"
+        data-modal-image="../imgs/Yuting_Learning/yuting_design_brief.webp"
+        aria-label="Open Yuting Learning branding design brief"
+      >
+        <div class="aspect-[4/5] overflow-hidden bg-[#f8f5f1]">
+          <img
+            src="../imgs/Yuting_Learning/yuting_design_brief.webp"
+            alt="Yuting Learning branding design brief"
+            class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="p-6">
+          <p class="text-base font-extrabold text-black">
+            Brand Design Brief
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-[#666666]">
+            Logo development, color palette, typography, and identity guidelines organized into one system.
+          </p>
+        </div>
+      </button>
+
+      <!-- SEARCH VISIBILITY -->
+      <button
+        type="button"
+        class="reveal-card group overflow-hidden rounded-[28px] border border-black/5 bg-white text-left shadow-card transition duration-300 hover:-translate-y-2 hover:shadow-hover"
+        data-modal-image="../imgs/Yuting_Learning/google_research.webp"
+        aria-label="Open Yuting Learning Google search result"
+      >
+        <div class="aspect-[4/5] overflow-hidden bg-[#f8f5f1]">
+          <img
+            src="../imgs/Yuting_Learning/google_research.webp"
+            alt="Yuting Learning Google search result"
+            class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="p-6">
+          <p class="text-base font-extrabold text-black">
+            Search Visibility
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-[#666666]">
+            Google search appearance supported by structured metadata, SEO implementation, and content clarity.
+          </p>
+        </div>
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- ================= PROJECT NAV ================= -->
+    <section class="bg-white reveal-group py-14">
+      <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+        <div class="reveal-up flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="pro-waada.html" class="btn-outline-brand">Previous Project</a>
+          <a href="../portfolio.html" class="btn-brand">Back to Portfolio</a>
+          <a href="pro-chocolate-bar.html" class="btn-outline-brand">Next Project</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= IMAGE MODAL ================= -->
+  <div
+    id="imageModal"
+    class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/85 p-5"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Project image preview"
+  >
+    <button
+      id="modalClose"
+      type="button"
+      class="absolute right-5 top-5 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur transition hover:bg-white/20"
+      aria-label="Close image preview"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img
+      id="modalImage"
+      src=""
+      alt="Selected project output enlarged"
+      class="max-h-[82vh] max-w-[86vw] rounded-[18px] object-contain shadow-2xl"
+    />
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#111111] py-14 text-white">
+    <div class="mx-auto max-w-[1180px] px-5 md:px-7">
+      <div class="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-start">
+        <div class="text-center md:text-left">
+          <a
+            href="../index.html"
+            class="inline-flex items-baseline gap-1 text-[1.4rem] font-extrabold tracking-[0.08em]"
+            aria-label="Liam Duan home"
+          >
+            <span class="text-brand-red">LIAM</span>
+            <span class="text-white">DUAN</span>
+          </a>
+
+          <p class="mt-4 max-w-[520px] text-sm leading-7 text-white/65 md:text-base">
+            UX/UI Designer, Front-End Developer, and Visual Designer focused on
+            clear structure, responsive websites, branding, and meaningful digital experiences.
+          </p>
+
+          <p class="mt-3 text-sm text-white/45">
+            Based in Albany, NY
+          </p>
+        </div>
+
+        <div class="text-center md:text-right">
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.16em] text-white/40">
+            Explore
+          </p>
+
+          <ul class="space-y-3 text-sm">
+            <li><a class="footer-link transition hover:text-brand-red" href="../index.html">Home</a></li>
+            <li><a class="footer-link transition hover:text-brand-red" href="../portfolio.html">Portfolio</a></li>
+            <li>
+              <a
+                class="footer-link transition hover:text-brand-red"
+                href="../imgs/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
+            </li>
+            <li><a class="footer-link transition hover:text-brand-red" href="mailto:lduan1996@gmail.com">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 flex justify-center gap-5">
+        <a href="https://www.facebook.com/Liam.L.Duan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/liam.lduan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="mailto:lduan1996@gmail.com" aria-label="Email" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/liam-duan-248253285/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <div class="mt-10 border-t border-white/10 pt-6 text-center text-sm text-white/45">
+        <p>
+          © <span id="year"></span>
+          <a href="../index.html" class="footer-link hover:text-white">Liam Duan</a>.
+          All rights reserved.
+        </p>
+
+        <p class="mt-2">
+          Designed & Developed by Liam Duan
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
